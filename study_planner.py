@@ -13,6 +13,44 @@ import re
 from datetime import datetime, timedelta
 
 
+def validate_daily_limit(minutes):
+    """Validate daily study time limit with amusing warnings for extreme values."""
+    print(f"   ⏰ Validating daily limit: {minutes} minutes")
+    
+    # Check for minimum 20 minutes
+    if minutes < 20:
+        print(f"   ❌ Error: Daily limit too low: {minutes} minutes")
+        print("   Minimum study time is 20 minutes per day.")
+        print("   Even a short daily session helps build momentum!")
+        sys.exit(1)
+    
+    # Check for maximum 8 hours (480 minutes)
+    if minutes > 480:
+        print(f"   ❌ Error: Daily limit too high: {minutes} minutes ({minutes/60:.1f} hours)")
+        print("   Maximum study time is 8 hours (480 minutes) per day.")
+        print("   Remember: sustainable learning beats burnout every time!")
+        sys.exit(1)
+    
+    # Amusing warnings for 4+ hours (240+ minutes)
+    if minutes >= 240:
+        hours = minutes / 60
+        print(f"   ⚠️  High intensity detected: {minutes} minutes ({hours:.1f} hours/day)")
+        if minutes >= 360:  # 6+ hours
+            print("   🔥 That's some serious dedication! Make sure to:")
+            print("      • Take regular breaks every hour")
+            print("      • Stay hydrated and eat well")
+            print("      • Get enough sleep for retention")
+        elif minutes >= 300:  # 5+ hours
+            print("   📚 Marathon study mode activated!")
+            print("      • Remember to take breaks")
+            print("      • Consider splitting into morning/evening sessions")
+        else:  # 4+ hours
+            print("   💪 Ambitious goals! Don't forget to pace yourself.")
+    
+    print(f"   ✅ Daily limit validated: {minutes} minutes ({minutes/60:.1f} hours)")
+    return minutes
+
+
 def validate_start_date(date_string):
     """Parse and validate start date with auto-correction for weekends."""
     print(f"   📅 Validating start date: {date_string}")
@@ -192,12 +230,8 @@ Output:
         print("   Check file permissions.")
         sys.exit(1)
     
-    # Basic sanity check on daily_minutes
-    if daily_limit <= 0:
-        print(f"   ❌ Error: Daily minutes must be positive, got: {daily_limit}")
-        print("   Please specify a positive number of minutes.")
-        sys.exit(1)
-    print(f"   ✅ Daily limit: {daily_limit} minutes")
+    # Daily limit validation
+    validated_daily_limit = validate_daily_limit(daily_limit)
     
     # Comprehensive date validation with auto-correction
     validated_start_date = validate_start_date(start_date)
@@ -207,7 +241,7 @@ Output:
     
     print(f"Study Planner")
     print(f"Course File: {input_file}")
-    print(f"Daily Limit: {daily_limit} minutes")
+    print(f"Daily Limit: {validated_daily_limit} minutes")
     print(f"Start Date: {validated_start_date}")
     print()
     
@@ -219,7 +253,7 @@ Output:
         course_data = parse_course_json(input_file)
         
         # Phase 2: Generate schedule
-        scheduled_days = schedule_course(course_data, daily_limit, validated_start_date)
+        scheduled_days = schedule_course(course_data, validated_daily_limit, validated_start_date)
         
         # Phase 3: Generate Markdown
         markdown = generate_markdown(scheduled_days)
@@ -230,7 +264,6 @@ Output:
         
         print()
         print("✅ Pipeline completed successfully!")
-        print("Ready for Phase 2 implementation: Input Validation & Parsing")
         
     except Exception as e:
         print()
