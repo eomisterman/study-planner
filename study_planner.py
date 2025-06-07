@@ -38,16 +38,51 @@ def write_output(markdown_content, output_filename):
 
 def main():
     """Main pipeline function."""
-    # TODO: Implement command-line argument parsing
+    # Set up command-line argument parsing
+    parser = argparse.ArgumentParser(
+        description="Transform video course outlines into balanced study schedules.",
+        epilog="Example: python study_planner.py sample_course.json 60 2024-01-15"
+    )
     
-    # Pipeline structure:
+    parser.add_argument(
+        "course_file",
+        help="JSON file containing course outline"
+    )
+    
+    parser.add_argument(
+        "daily_minutes", 
+        type=int,
+        help="Maximum study time per day (20-480 minutes)"
+    )
+    
+    parser.add_argument(
+        "start_date",
+        help="Start date in YYYY-MM-DD format"
+    )
+    
+    # Parse arguments
+    try:
+        args = parser.parse_args()
+    except SystemExit:
+        return
+    
+    # Extract arguments for pipeline
+    input_file = args.course_file
+    daily_limit = args.daily_minutes
+    start_date = args.start_date
+    
+    print(f"Study Planner")
+    print(f"Course File: {input_file}")
+    print(f"Daily Limit: {daily_limit} minutes")
+    print(f"Start Date: {start_date}")
+    print()
+    print("Pipeline functions ready - implementation coming in next phases!")
+    
+    # Pipeline structure (ready for Phase 2+):
     # course_data = parse_course_json(input_file)
     # scheduled_days = schedule_course(course_data, daily_limit, start_date)
     # markdown = generate_markdown(scheduled_days)
     # write_output(markdown, output_filename)
-    
-    print("Study Planner - Coming Soon!")
-    print("This will transform your course outline into a balanced study schedule.")
 
 
 if __name__ == "__main__":
