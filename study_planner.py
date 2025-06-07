@@ -13,6 +13,53 @@ import re
 from datetime import datetime, timedelta
 
 
+def validate_start_date(date_string):
+    """Parse and validate start date with auto-correction for weekends."""
+    print(f"   📅 Validating start date: {date_string}")
+    
+    # Check basic format first
+    date_pattern = r'^\d{4}-\d{2}-\d{2}$'
+    if not re.match(date_pattern, date_string):
+        print(f"   ❌ Error: Invalid date format: {date_string}")
+        print("   Please use YYYY-MM-DD format (e.g., 2024-01-15)")
+        sys.exit(1)
+    
+    # Parse the date
+    try:
+        parsed_date = datetime.strptime(date_string, '%Y-%m-%d').date()
+    except ValueError as e:
+        print(f"   ❌ Error: Invalid date: {date_string}")
+        print("   Please check that the month (01-12) and day are valid.")
+        print("   Example: 2024-01-15 (January 15, 2024)")
+        sys.exit(1)
+    
+    # Check if date is in the past
+    today = datetime.now().date()
+    if parsed_date < today:
+        print(f"   ❌ Error: Start date cannot be in the past: {date_string}")
+        print(f"   Today is {today.strftime('%Y-%m-%d')}")
+        print("   Please choose today's date or a future date.")
+        sys.exit(1)
+    
+    # Auto-correct weekend dates to following Monday
+    weekday = parsed_date.weekday()  # Monday = 0, Sunday = 6
+    if weekday == 5:  # Saturday
+        corrected_date = parsed_date + timedelta(days=2)
+        print(f"   📅 Weekend date detected: {date_string} is a Saturday")
+        print(f"   🔄 Auto-corrected to following Monday: {corrected_date.strftime('%Y-%m-%d')}")
+        return corrected_date
+    elif weekday == 6:  # Sunday
+        corrected_date = parsed_date + timedelta(days=1)
+        print(f"   📅 Weekend date detected: {date_string} is a Sunday")
+        print(f"   🔄 Auto-corrected to following Monday: {corrected_date.strftime('%Y-%m-%d')}")
+        return corrected_date
+    else:
+        # Weekday - use as-is
+        weekday_name = parsed_date.strftime('%A')
+        print(f"   ✅ Valid weekday: {date_string} ({weekday_name})")
+        return parsed_date
+
+
 def parse_course_json(input_file):
     """Parse and validate JSON course file."""
     print(f"📖 Parsing course file: {input_file}")
@@ -152,20 +199,16 @@ Output:
         sys.exit(1)
     print(f"   ✅ Daily limit: {daily_limit} minutes")
     
-    # Basic format check on start_date (looks like YYYY-MM-DD)
-    date_pattern = r'^\d{4}-\d{2}-\d{2}$'
-    if not re.match(date_pattern, start_date):
-        print(f"   ❌ Error: Invalid date format: {start_date}")
-        print("   Please use YYYY-MM-DD format (e.g., 2024-01-15)")
-        sys.exit(1)
-    print(f"   ✅ Start date format: {start_date}")
+    # Comprehensive date validation with auto-correction
+    validated_start_date = validate_start_date(start_date)
     
-    print("   🎯 Basic validation passed!")
+    print("   🎯 All validation passed!")
+    print()
     
     print(f"Study Planner")
     print(f"Course File: {input_file}")
     print(f"Daily Limit: {daily_limit} minutes")
-    print(f"Start Date: {start_date}")
+    print(f"Start Date: {validated_start_date}")
     print()
     
     try:
@@ -176,7 +219,7 @@ Output:
         course_data = parse_course_json(input_file)
         
         # Phase 2: Generate schedule
-        scheduled_days = schedule_course(course_data, daily_limit, start_date)
+        scheduled_days = schedule_course(course_data, daily_limit, validated_start_date)
         
         # Phase 3: Generate Markdown
         markdown = generate_markdown(scheduled_days)
