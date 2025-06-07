@@ -1,0 +1,95 @@
+{
+  "course_title": "AWS Solutions Architect Associate",
+  "sections": [
+    {
+      "title": "S3 Fundamentals",
+      "items": [
+        {
+          "title": "S3 Introduction",
+          "type": "video",
+          "duration": "15:30"
+        },
+        {
+          "title": "S3 Hands-on Lab",
+          "type": "video",
+          "duration": "22:45"
+        },
+        {
+          "title": "S3 PreSigned URLs",
+          "type": "video",
+          "duration": "11:11"
+        },
+        {
+          "title": "DEMO - Creating PresignedURLs",
+          "type": "video",
+          "duration": "18:23"
+        },
+        {
+          "title": "S3 Knowledge Check",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "EC2 Fundamentals",
+      "items": [
+        {
+          "title": "EC2 Basics",
+          "type": "video",
+          "duration": "23:30"
+        },
+        {
+          "title": "EC2 Instance Types",
+          "type": "video",
+          "duration": "35:45"
+        },
+        {
+          "title": "EC2 Security Groups",
+          "type": "video",
+          "duration": "32:15"
+        },
+        {
+          "title": "EC2 Hands-on Lab",
+          "type": "video",
+          "duration": "45:00"
+        },
+        {
+          "title": "EC2 Knowledge Check",
+          "type": "quiz",
+          "duration": "15:00"
+        }
+      ]
+    },
+    {
+      "title": "VPC Deep Dive",
+      "items": [
+        {
+          "title": "VPC Overview",
+          "type": "video",
+          "duration": "28:15"
+        },
+        {
+          "title": "Subnets and Route Tables",
+          "type": "video",
+          "duration": "41:30"
+        },
+        {
+          "title": "VPC Security",
+          "type": "video",
+          "duration": "33:45"
+        },
+        {
+          "title": "VPC Hands-on Lab",
+          "type": "video", 
+          "duration": "67:20"
+        },
+        {
+          "title": "VPC Final Quiz",
+          "type": "quiz",
+          "duration": "20:00"
+        }
+      ]
+    }
+  ]
+}
