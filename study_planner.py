@@ -81,23 +81,39 @@ def main():
     # Set up command-line argument parsing
     parser = argparse.ArgumentParser(
         description="Transform video course outlines into balanced study schedules.",
-        epilog="Example: python study_planner.py sample_course.json 60 2024-01-15"
+        epilog="""
+Examples:
+  python study_planner.py sample_course.json 60 2024-01-15
+    Generate a schedule with 60 minutes per day starting January 15, 2024
+    
+  python study_planner.py aws_course.json 90 2024-02-01
+    Generate a schedule with 90 minutes per day starting February 1, 2024
+    
+  python study_planner.py course.json 120 2024-03-15
+    Generate a schedule with 2 hours per day starting March 15, 2024
+
+Output:
+  Creates a Markdown file with checkboxes for progress tracking
+  Schedule includes only weekdays (Monday-Friday)
+  Content is balanced across days respecting your time limits
+        """,
+        formatter_class=argparse.RawDescriptionHelpFormatter
     )
     
     parser.add_argument(
         "course_file",
-        help="JSON file containing course outline"
+        help="JSON file containing course outline with sections and items"
     )
     
     parser.add_argument(
         "daily_minutes", 
         type=int,
-        help="Maximum study time per day (20-480 minutes)"
+        help="Maximum study time per day (minimum: 20 minutes, maximum: 480 minutes)"
     )
     
     parser.add_argument(
         "start_date",
-        help="Start date in YYYY-MM-DD format"
+        help="Start date in YYYY-MM-DD format (if weekend, will start following Monday)"
     )
     
     # Parse arguments
