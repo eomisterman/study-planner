@@ -98,18 +98,184 @@ def validate_start_date(date_string):
         return parsed_date
 
 
+def parse_duration(duration_str):
+    """Parse duration string (MM:SS format) and convert to minutes."""
+    # Remove whitespace
+    duration_str = duration_str.strip()
+    
+    # Check format: MM:SS or M:SS
+    duration_pattern = r'^(\d{1,2}):(\d{2})$'
+    match = re.match(duration_pattern, duration_str)
+    
+    if not match:
+        raise ValueError(f"Invalid duration format: '{duration_str}'. Expected MM:SS (e.g., '15:30', '05:45')")
+    
+    minutes = int(match.group(1))
+    seconds = int(match.group(2))
+    
+    # Validate seconds (0-59)
+    if seconds >= 60:
+        raise ValueError(f"Invalid seconds in duration: '{duration_str}'. Seconds must be 00-59")
+    
+    # Convert to total minutes (rounded up if seconds > 0)
+    total_minutes = minutes
+    if seconds > 0:
+        total_minutes += 1  # Round up for any partial minute
+    
+    return total_minutes
+
+
+def validate_course_structure(course_data):
+    """Validate the overall structure of the course data."""
+    if not isinstance(course_data, dict):
+        raise ValueError(f"Course file must contain a JSON object, got {type(course_data).__name__}")
+    
+    # Check required top-level fields
+    if 'course_title' not in course_data:
+        raise ValueError("Missing required field: 'course_title'")
+    
+    if 'sections' not in course_data:
+        raise ValueError("Missing required field: 'sections'")
+    
+    # Validate course_title
+    if not isinstance(course_data['course_title'], str) or not course_data['course_title'].strip():
+        raise ValueError("Field 'course_title' must be a non-empty string")
+    
+    # Validate sections
+    if not isinstance(course_data['sections'], list):
+        raise ValueError("Field 'sections' must be a list")
+    
+    if len(course_data['sections']) == 0:
+        raise ValueError("Course must have at least one section")
+    
+    return True
+
+
+def validate_section(section, section_index):
+    """Validate a single section structure."""
+    if not isinstance(section, dict):
+        raise ValueError(f"Section {section_index + 1} must be an object, got {type(section).__name__}")
+    
+    # Check required fields
+    if 'title' not in section:
+        raise ValueError(f"Section {section_index + 1}: Missing required field 'title'")
+    
+    if 'items' not in section:
+        raise ValueError(f"Section {section_index + 1}: Missing required field 'items'")
+    
+    # Validate title
+    if not isinstance(section['title'], str) or not section['title'].strip():
+        raise ValueError(f"Section {section_index + 1}: Field 'title' must be a non-empty string")
+    
+    # Validate items
+    if not isinstance(section['items'], list):
+        raise ValueError(f"Section {section_index + 1}: Field 'items' must be a list")
+    
+    if len(section['items']) == 0:
+        raise ValueError(f"Section {section_index + 1} ('{section['title']}'): Must have at least one item")
+    
+    return True
+
+
+def validate_item(item, section_title, item_index):
+    """Validate a single item structure."""
+    if not isinstance(item, dict):
+        raise ValueError(f"Section '{section_title}', Item {item_index + 1}: Must be an object, got {type(item).__name__}")
+    
+    # Check required fields
+    required_fields = ['title', 'type', 'duration']
+    for field in required_fields:
+        if field not in item:
+            raise ValueError(f"Section '{section_title}', Item {item_index + 1}: Missing required field '{field}'")
+    
+    # Validate title
+    if not isinstance(item['title'], str) or not item['title'].strip():
+        raise ValueError(f"Section '{section_title}', Item {item_index + 1}: Field 'title' must be a non-empty string")
+    
+    # Validate type
+    if not isinstance(item['type'], str) or not item['type'].strip():
+        raise ValueError(f"Section '{section_title}', Item {item_index + 1}: Field 'type' must be a non-empty string")
+    
+    # Validate duration
+    if not isinstance(item['duration'], str) or not item['duration'].strip():
+        raise ValueError(f"Section '{section_title}', Item {item_index + 1}: Field 'duration' must be a non-empty string")
+    
+    # Parse and validate duration format
+    try:
+        duration_minutes = parse_duration(item['duration'])
+        if duration_minutes <= 0:
+            raise ValueError(f"Section '{section_title}', Item {item_index + 1}: Duration must be greater than 0 minutes")
+    except ValueError as e:
+        raise ValueError(f"Section '{section_title}', Item {item_index + 1}: {str(e)}")
+    
+    return duration_minutes
+
+
 def parse_course_json(input_file):
     """Parse and validate JSON course file."""
     print(f"📖 Parsing course file: {input_file}")
+    
     try:
-        # TODO: Implement full JSON parsing and validation in Phase 2
-        # For now, return placeholder data to test pipeline
-        return {
-            "course_title": "Sample Course",
-            "sections": []
-        }
+        # Read and parse JSON file
+        with open(input_file, 'r', encoding='utf-8') as f:
+            course_data = json.load(f)
+        
+        print("   ✅ JSON file loaded successfully")
+        
+        # Validate overall structure
+        validate_course_structure(course_data)
+        print("   ✅ Course structure validated")
+        
+        # Process and validate each section
+        total_items = 0
+        total_duration_minutes = 0
+        
+        for section_index, section in enumerate(course_data['sections']):
+            # Validate section structure
+            validate_section(section, section_index)
+            
+            # Process items in this section
+            section_duration = 0
+            for item_index, item in enumerate(section['items']):
+                # Validate item structure and get duration
+                item_duration = validate_item(item, section['title'], item_index)
+                
+                # Add duration to item for later use
+                item['duration_minutes'] = item_duration
+                section_duration += item_duration
+                total_items += 1
+            
+            # Add section metadata
+            section['total_duration_minutes'] = section_duration
+            total_duration_minutes += section_duration
+            
+            print(f"   ✅ Section '{section['title']}': {len(section['items'])} items, {section_duration} minutes")
+        
+        # Add course metadata
+        course_data['total_items'] = total_items
+        course_data['total_duration_minutes'] = total_duration_minutes
+        
+        print("   📊 Course Summary:")
+        print(f"      Title: {course_data['course_title']}")
+        print(f"      Sections: {len(course_data['sections'])}")
+        print(f"      Total Items: {total_items}")
+        print(f"      Total Duration: {total_duration_minutes} minutes ({total_duration_minutes/60:.1f} hours)")
+        
+        return course_data
+        
+    except FileNotFoundError:
+        print(f"   ❌ Error: Course file not found: {input_file}")
+        raise
+    except json.JSONDecodeError as e:
+        print(f"   ❌ Error: Invalid JSON format in {input_file}")
+        print(f"      {str(e)}")
+        raise
+    except ValueError as e:
+        print(f"   ❌ Error: Invalid course structure in {input_file}")
+        print(f"      {str(e)}")
+        raise
     except Exception as e:
-        print(f"❌ Error parsing course file: {e}")
+        print(f"   ❌ Error: Failed to parse course file: {str(e)}")
         raise
 
 
@@ -239,7 +405,7 @@ Output:
     print("   🎯 All validation passed!")
     print()
     
-    print(f"Study Planner")
+    print("Study Planner")
     print(f"Course File: {input_file}")
     print(f"Daily Limit: {validated_daily_limit} minutes")
     print(f"Start Date: {validated_start_date}")
