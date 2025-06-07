@@ -9,6 +9,7 @@ study schedules with progress tracking checkboxes.
 import argparse
 import json
 import sys
+import re
 from datetime import datetime, timedelta
 
 
@@ -126,6 +127,40 @@ Output:
     input_file = args.course_file
     daily_limit = args.daily_minutes
     start_date = args.start_date
+    
+    # Basic argument validation
+    print("🔍 Validating arguments...")
+    
+    # Check if course file exists and is readable
+    try:
+        with open(input_file, 'r') as f:
+            pass  # Just check if we can open it
+        print(f"   ✅ Course file found: {input_file}")
+    except FileNotFoundError:
+        print(f"   ❌ Error: Course file not found: {input_file}")
+        print("   Make sure the file exists and the path is correct.")
+        sys.exit(1)
+    except PermissionError:
+        print(f"   ❌ Error: Cannot read course file: {input_file}")
+        print("   Check file permissions.")
+        sys.exit(1)
+    
+    # Basic sanity check on daily_minutes
+    if daily_limit <= 0:
+        print(f"   ❌ Error: Daily minutes must be positive, got: {daily_limit}")
+        print("   Please specify a positive number of minutes.")
+        sys.exit(1)
+    print(f"   ✅ Daily limit: {daily_limit} minutes")
+    
+    # Basic format check on start_date (looks like YYYY-MM-DD)
+    date_pattern = r'^\d{4}-\d{2}-\d{2}$'
+    if not re.match(date_pattern, start_date):
+        print(f"   ❌ Error: Invalid date format: {start_date}")
+        print("   Please use YYYY-MM-DD format (e.g., 2024-01-15)")
+        sys.exit(1)
+    print(f"   ✅ Start date format: {start_date}")
+    
+    print("   🎯 Basic validation passed!")
     
     print(f"Study Planner")
     print(f"Course File: {input_file}")
