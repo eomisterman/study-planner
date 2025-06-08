@@ -279,22 +279,107 @@ def parse_course_json(input_file):
         raise
 
 
+def generate_weekday_sequence(start_date, num_days_needed):
+    """Generate sequence of weekday dates starting from start_date."""
+    weekdays = []
+    current_date = start_date
+    days_added = 0
+    
+    while days_added < num_days_needed:
+        # Only add weekdays (Monday=0 to Friday=4)
+        if current_date.weekday() < 5:
+            weekdays.append(current_date)
+            days_added += 1
+        current_date += timedelta(days=1)
+    
+    return weekdays
+
+
 def schedule_course(course_data, daily_limit, start_date):
     """Generate balanced study schedule from course data."""
     print(f"📅 Scheduling course: {course_data['course_title']}")
     print(f"   Daily limit: {daily_limit} minutes")
     print(f"   Start date: {start_date}")
+    
     try:
-        # TODO: Implement core scheduling algorithm in Phase 3
-        # For now, return placeholder scheduled days
-        return [
-            {
-                "day": 1,
-                "date": start_date,
-                "items": [],
-                "total_minutes": 0
+        # Estimate number of days needed (rough calculation)
+        total_minutes = course_data['total_duration_minutes']
+        estimated_days = max(1, (total_minutes + daily_limit - 1) // daily_limit)  # Round up
+        
+        # Generate weekday sequence (with some buffer)
+        weekdays = generate_weekday_sequence(start_date, estimated_days + 5)
+        
+        # Initialize scheduling variables
+        scheduled_days = []
+        current_day_index = 0
+        current_day_minutes = 0
+        current_day_items = []
+        
+        # Process all items from all sections in order
+        all_items = []
+        for section in course_data['sections']:
+            for item in section['items']:
+                # Add section context to item
+                item_with_context = item.copy()
+                item_with_context['section_title'] = section['title']
+                all_items.append(item_with_context)
+        
+        print(f"   📋 Processing {len(all_items)} items across {len(course_data['sections'])} sections")
+        
+        # Schedule each item
+        for item_index, item in enumerate(all_items):
+            item_duration = item['duration_minutes']
+            
+            # Check if item fits in current day
+            if current_day_minutes + item_duration <= daily_limit:
+                # Item fits - add it to current day
+                current_day_items.append(item)
+                current_day_minutes += item_duration
+                print(f"   ✅ Item {item_index + 1}: '{item['title']}' ({item_duration}min) → Day {current_day_index + 1}")
+                
+            else:
+                # Item doesn't fit - finalize current day and start new day
+                if current_day_items:  # Only save if we have items
+                    day_info = {
+                        "day_number": len(scheduled_days) + 1,
+                        "date": weekdays[current_day_index],
+                        "date_string": weekdays[current_day_index].strftime('%A, %B %d, %Y'),
+                        "items": current_day_items.copy(),
+                        "total_minutes": current_day_minutes
+                    }
+                    scheduled_days.append(day_info)
+                    print(f"   📅 Day {day_info['day_number']} completed: {current_day_minutes} minutes ({len(current_day_items)} items)")
+                
+                # Move to next day
+                current_day_index += 1
+                current_day_items = [item]
+                current_day_minutes = item_duration
+                print(f"   🔄 Moving to Day {current_day_index + 1}")
+                print(f"   ✅ Item {item_index + 1}: '{item['title']}' ({item_duration}min) → Day {current_day_index + 1}")
+        
+        # Don't forget the last day
+        if current_day_items:
+            day_info = {
+                "day_number": len(scheduled_days) + 1,
+                "date": weekdays[current_day_index],
+                "date_string": weekdays[current_day_index].strftime('%A, %B %d, %Y'),
+                "items": current_day_items.copy(),
+                "total_minutes": current_day_minutes
             }
-        ]
+            scheduled_days.append(day_info)
+            print(f"   📅 Final Day {day_info['day_number']} completed: {current_day_minutes} minutes ({len(current_day_items)} items)")
+        
+        print(f"   🎯 Scheduling complete: {len(scheduled_days)} days total")
+        
+        # Summary
+        total_scheduled_minutes = sum(day['total_minutes'] for day in scheduled_days)
+        print(f"   📊 Schedule Summary:")
+        print(f"      Total days: {len(scheduled_days)}")
+        print(f"      Total time: {total_scheduled_minutes} minutes ({total_scheduled_minutes/60:.1f} hours)")
+        print(f"      Average per day: {total_scheduled_minutes/len(scheduled_days):.1f} minutes")
+        
+        return scheduled_days
+        
     except Exception as e:
         print(f"❌ Error scheduling course: {e}")
         raise
