@@ -1,0 +1,1940 @@
+{
+  "course_title": "AWS Solutions Architect Associate",
+  "sections": [
+    {
+      "title": "INTRODUCTION & SCENARIO",
+      "items": [
+        {
+          "title": "Public Introduction",
+          "type": "video",
+          "duration": "4:04"
+        },
+        {
+          "title": "AWS Exams",
+          "type": "video",
+          "duration": "17:32"
+        },
+        {
+          "title": "Scenario - Animals4life",
+          "type": "video",
+          "duration": "13:28"
+        },
+        {
+          "title": "Connect with other students and your instructor",
+          "type": "video",
+          "duration": "3:10"
+        },
+        {
+          "title": "AWS Accounts - The basics",
+          "type": "video",
+          "duration": "11:33"
+        },
+        {
+          "title": "DEMO - ACCOUNTS - STEP1 - Creating GENERAL AWS Account",
+          "type": "video",
+          "duration": "14:44"
+        },
+        {
+          "title": "Multi-factor Authentication (MFA)",
+          "type": "video",
+          "duration": "8:25"
+        },
+        {
+          "title": "DEMO - ACCOUNTS - STEP2 - Securing GENERAL AWS Account",
+          "type": "video",
+          "duration": "9:44"
+        },
+        {
+          "title": "DEMO - ACCOUNTS - STEP3 - Creating a Budget",
+          "type": "video",
+          "duration": "6:46"
+        },
+        {
+          "title": "Creating the Production Account",
+          "type": "video",
+          "duration": "4:59"
+        },
+        {
+          "title": "Identity and Access Management (IAM) Basics",
+          "type": "video",
+          "duration": "13:01"
+        },
+        {
+          "title": "DEMO - ACCOUNTS - STEP4 - Adding IAMADMIN to GENERAL Account",
+          "type": "video",
+          "duration": "12:36"
+        },
+        {
+          "title": "DEMO - ACCOUNTS - STEP4 - Adding IAMADMIN to PRODUCTION Account",
+          "type": "video",
+          "duration": "10:17"
+        },
+        {
+          "title": "IAM Access Keys",
+          "type": "video",
+          "duration": "7:10"
+        },
+        {
+          "title": "DEMO - Creating Access keys and setting up AWS CLI v2 tools",
+          "type": "video",
+          "duration": "17:43"
+        }
+      ]
+    },
+    {
+      "title": "AWS Fundamentals",
+      "items": [
+        {
+          "title": "AWS Public vs Private Services",
+          "type": "video",
+          "duration": "7:04"
+        },
+        {
+          "title": "AWS Global Infrastructure",
+          "type": "video",
+          "duration": "14:54"
+        },
+        {
+          "title": "AWS Default Virtual Private Cloud (VPC)",
+          "type": "video",
+          "duration": "15:19"
+        },
+        {
+          "title": "Elastic Compute Cloud (EC2) Basics",
+          "type": "video",
+          "duration": "14:46"
+        },
+        {
+          "title": "DEMO - My First EC2 Instance - PART1",
+          "type": "video",
+          "duration": "10:58"
+        },
+        {
+          "title": "DEMO - My First EC2 Instance - PART2",
+          "type": "video",
+          "duration": "9:40"
+        },
+        {
+          "title": "Simple Storage Service (S3) Basics",
+          "type": "video",
+          "duration": "15:48"
+        },
+        {
+          "title": "DEMO - My First S3 Bucket",
+          "type": "video",
+          "duration": "18:34"
+        },
+        {
+          "title": "CloudFormation (CFN) Basics",
+          "type": "video",
+          "duration": "12:28"
+        },
+        {
+          "title": "DEMO - Simple Automation With CloudFormation (CFN)",
+          "type": "video",
+          "duration": "15:52"
+        },
+        {
+          "title": "CloudWatch (CW) Basics",
+          "type": "video",
+          "duration": "13:45"
+        },
+        {
+          "title": "DEMO - Simple Monitoring with Cloudwatch",
+          "type": "video",
+          "duration": "15:31"
+        },
+        {
+          "title": "Shared Responsibility Model",
+          "type": "video",
+          "duration": "6:20"
+        },
+        {
+          "title": "High-Availability vs Fault-Tolerance vs Disaster Recovery",
+          "type": "video",
+          "duration": "17:21"
+        },
+        {
+          "title": "Route53 (R53) Fundamentals",
+          "type": "video",
+          "duration": "6:29"
+        },
+        {
+          "title": "DEMO - Registering a Domain with route53",
+          "type": "video",
+          "duration": "9:49"
+        },
+        {
+          "title": "DNS Record Types",
+          "type": "video",
+          "duration": "13:25"
+        },
+        {
+          "title": "Fundamentals Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "IAM, ACCOUNTS AND AWS ORGANISATIONS",
+      "items": [
+        {
+          "title": "IAM Identity Policies",
+          "type": "video",
+          "duration": "15:52"
+        },
+        {
+          "title": "IAM Users and ARNs",
+          "type": "video",
+          "duration": "13:49"
+        },
+        {
+          "title": "DEMO - Simple Identity Permissions in AWS",
+          "type": "video",
+          "duration": "16:06"
+        },
+        {
+          "title": "IAM Groups",
+          "type": "video",
+          "duration": "7:48"
+        },
+        {
+          "title": "DEMO - Permissions control using IAM Groups",
+          "type": "video",
+          "duration": "9:24"
+        },
+        {
+          "title": "IAM Roles - The Tech",
+          "type": "video",
+          "duration": "8:13"
+        },
+        {
+          "title": "When to use IAM Roles",
+          "type": "video",
+          "duration": "15:27"
+        },
+        {
+          "title": "Service-linked Roles & PassRole",
+          "type": "video",
+          "duration": "5:16"
+        },
+        {
+          "title": "AWS Organizations",
+          "type": "video",
+          "duration": "12:56"
+        },
+        {
+          "title": "DEMO - AWS Organizations",
+          "type": "video",
+          "duration": "19:48"
+        },
+        {
+          "title": "Service Control Policies (SCPs)",
+          "type": "video",
+          "duration": "12:44"
+        },
+        {
+          "title": "DEMO - Using Service Control Policies",
+          "type": "video",
+          "duration": "16:45"
+        },
+        {
+          "title": "CloudWatch Logs",
+          "type": "video",
+          "duration": "7:16"
+        },
+        {
+          "title": "CloudTrail",
+          "type": "video",
+          "duration": "11:40"
+        },
+        {
+          "title": "DEMO - Implementing an Organizational Trail",
+          "type": "video",
+          "duration": "18:23"
+        },
+        {
+          "title": "AWS Control Tower 101",
+          "type": "video",
+          "duration": "15:42"
+        },
+        {
+          "title": "IAM & Orgs Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "SIMPLE STORAGE SERVICE (S3)",
+      "items": [
+        {
+          "title": "S3 Security (Resource Policies & ACLs)",
+          "type": "video",
+          "duration": "18:19"
+        },
+        {
+          "title": "S3 Static Hosting",
+          "type": "video",
+          "duration": "10:36"
+        },
+        {
+          "title": "DEMO - Creating a static website with S3",
+          "type": "video",
+          "duration": "17:55"
+        },
+        {
+          "title": "Object Versioning & MFA Delete",
+          "type": "video",
+          "duration": "7:41"
+        },
+        {
+          "title": "DEMO - S3 Versioning",
+          "type": "video",
+          "duration": "15:45"
+        },
+        {
+          "title": "S3 Performance Optimization",
+          "type": "video",
+          "duration": "11:42"
+        },
+        {
+          "title": "DEMO - S3 Performance",
+          "type": "video",
+          "duration": "5:06"
+        },
+        {
+          "title": "Key Management Service (KMS)",
+          "type": "video",
+          "duration": "18:38"
+        },
+        {
+          "title": "DEMO - KMS - Encrypting the battleplans with KMS",
+          "type": "video",
+          "duration": "12:43"
+        },
+        {
+          "title": "S3 Object Encryption CSE/SSE",
+          "type": "video",
+          "duration": "23:31"
+        },
+        {
+          "title": "DEMO - Object Encryption and Role Separation",
+          "type": "video",
+          "duration": "14:50"
+        },
+        {
+          "title": "S3 Bucket Keys",
+          "type": "video",
+          "duration": "5:59"
+        },
+        {
+          "title": "S3 Object Storage Classes - PART1",
+          "type": "video",
+          "duration": "9:23"
+        },
+        {
+          "title": "S3 Object Storage Classes - PART2",
+          "type": "video",
+          "duration": "11:41"
+        },
+        {
+          "title": "S3 Lifecycle Configuration",
+          "type": "video",
+          "duration": "8:13"
+        },
+        {
+          "title": "S3 Replication",
+          "type": "video",
+          "duration": "13:59"
+        },
+        {
+          "title": "DEMO - Cross-Region Replication of an S3 Static Website",
+          "type": "video",
+          "duration": "19:52"
+        },
+        {
+          "title": "S3 PreSigned URLs",
+          "type": "video",
+          "duration": "11:11"
+        },
+        {
+          "title": "DEMO - Creating and using PresignedURLs",
+          "type": "video",
+          "duration": "18:23"
+        },
+        {
+          "title": "S3 Select and Glacier Select",
+          "type": "video",
+          "duration": "5:33"
+        },
+        {
+          "title": "S3 Events",
+          "type": "video",
+          "duration": "4:32"
+        },
+        {
+          "title": "S3 Access Logs",
+          "type": "video",
+          "duration": "3:05"
+        },
+        {
+          "title": "S3 Object Lock",
+          "type": "video",
+          "duration": "9:52"
+        },
+        {
+          "title": "S3 Access Points",
+          "type": "video",
+          "duration": "5:52"
+        },
+        {
+          "title": "DEMO - Multi-Region Access Points (MRAP)",
+          "type": "video",
+          "duration": "20:25"
+        },
+        {
+          "title": "S3 Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "VIRTUAL PRIVATE CLOUD (VPC) BASICS",
+      "items": [
+        {
+          "title": "VPC Sizing and Structure - PART1",
+          "type": "video",
+          "duration": "11:48"
+        },
+        {
+          "title": "VPC Sizing and Structure - PART2",
+          "type": "video",
+          "duration": "11:16"
+        },
+        {
+          "title": "Custom VPCs - PART1 - THEORY",
+          "type": "video",
+          "duration": "10:10"
+        },
+        {
+          "title": "DEMO - Custom VPCs - PART2 - DEMO [UPDATED20231129]",
+          "type": "video",
+          "duration": "5:40"
+        },
+        {
+          "title": "VPC Subnets",
+          "type": "video",
+          "duration": "10:42"
+        },
+        {
+          "title": "DEMO - Implement multi-tier VPC subnets [UPDATED20231129]",
+          "type": "video",
+          "duration": "15:03"
+        },
+        {
+          "title": "VPC Routing, Internet Gateway & Bastion Hosts",
+          "type": "video",
+          "duration": "17:35"
+        },
+        {
+          "title": "DEMO - Configuring A4L public subnets and Jumpbox - PART1 [UPDATED20231119]",
+          "type": "video",
+          "duration": "13:45"
+        },
+        {
+          "title": "DEMO - Configuring A4L public subnets and Jumpbox - PART2 [UPDATED20231119]",
+          "type": "video",
+          "duration": "11:35"
+        },
+        {
+          "title": "Stateful vs Stateless Firewalls",
+          "type": "video",
+          "duration": "14:04"
+        },
+        {
+          "title": "Network Access Control Lists (NACLs)",
+          "type": "video",
+          "duration": "12:38"
+        },
+        {
+          "title": "Security Groups (SG)",
+          "type": "video",
+          "duration": "11:48"
+        },
+        {
+          "title": "Network Address Translation (NAT) & NAT Gateway - PART1",
+          "type": "video",
+          "duration": "13:43"
+        },
+        {
+          "title": "Network Address Translation (NAT) & NAT Gateway - PART2",
+          "type": "video",
+          "duration": "11:08"
+        },
+        {
+          "title": "DEMO - Implementing private internet access using NAT Gateways",
+          "type": "video",
+          "duration": "19:25"
+        },
+        {
+          "title": "VPC Basics Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "ELASTIC COMPUTE CLOUD (EC2) BASICS",
+      "items": [
+        {
+          "title": "Virtualization 101",
+          "type": "video",
+          "duration": "12:27"
+        },
+        {
+          "title": "EC2 Architecture and Resilience",
+          "type": "video",
+          "duration": "12:36"
+        },
+        {
+          "title": "EC2 Instance Types - PART1",
+          "type": "video",
+          "duration": "11:52"
+        },
+        {
+          "title": "EC2 Instance Types - PART2",
+          "type": "video",
+          "duration": "8:13"
+        },
+        {
+          "title": "DEMO - EC2 SSH vs EC2 Instance Connect",
+          "type": "video",
+          "duration": "17:06"
+        },
+        {
+          "title": "Storage Refresher",
+          "type": "video",
+          "duration": "14:16"
+        },
+        {
+          "title": "Elastic Block Store (EBS) Service Architecture",
+          "type": "video",
+          "duration": "8:43"
+        },
+        {
+          "title": "EBS Volume Types - General Purpose",
+          "type": "video",
+          "duration": "9:23"
+        },
+        {
+          "title": "EBS Volume Types - Provisioned IOPS",
+          "type": "video",
+          "duration": "6:16"
+        },
+        {
+          "title": "EBS Volume Types - HDD-Based",
+          "type": "video",
+          "duration": "4:32"
+        },
+        {
+          "title": "Instance Store Volumes - Architecture",
+          "type": "video",
+          "duration": "9:00"
+        },
+        {
+          "title": "Choosing between the EC2 Instance Store and EBS",
+          "type": "video",
+          "duration": "8:49"
+        },
+        {
+          "title": "Snapshots, Restore & Fast Snapshot Restore (FSR)",
+          "type": "video",
+          "duration": "10:55"
+        },
+        {
+          "title": "DEMO - EBS Volumes - PART1",
+          "type": "video",
+          "duration": "15:16"
+        },
+        {
+          "title": "DEMO - EBS Volumes - PART2",
+          "type": "video",
+          "duration": "14:13"
+        },
+        {
+          "title": "DEMO - EBS Volumes - PART3",
+          "type": "video",
+          "duration": "14:27"
+        },
+        {
+          "title": "EBS Encryption",
+          "type": "video",
+          "duration": "8:22"
+        },
+        {
+          "title": "Network Interfaces, Instance IPs and DNS",
+          "type": "video",
+          "duration": "15:58"
+        },
+        {
+          "title": "DEMO - Manual Install of Wordpress on EC2 - PART1",
+          "type": "video",
+          "duration": "12:27"
+        },
+        {
+          "title": "DEMO - Manual Install of Wordpress on EC2 - PART2",
+          "type": "video",
+          "duration": "12:36"
+        },
+        {
+          "title": "Amazon Machine Images (AMI)",
+          "type": "video",
+          "duration": "13:58"
+        },
+        {
+          "title": "DEMO - Creating an Animals4life AMI - PART1",
+          "type": "video",
+          "duration": "9:38"
+        },
+        {
+          "title": "DEMO - Creating an Animals4life AMI - PART2",
+          "type": "video",
+          "duration": "10:57"
+        },
+        {
+          "title": "DEMO - Copying & Sharing an AMI",
+          "type": "video",
+          "duration": "8:35"
+        },
+        {
+          "title": "EC2 Purchase Options - PART1",
+          "type": "video",
+          "duration": "9:22"
+        },
+        {
+          "title": "EC2 Purchase Options - PART2",
+          "type": "video",
+          "duration": "11:56"
+        },
+        {
+          "title": "Reserved Instances - the rest",
+          "type": "video",
+          "duration": "11:58"
+        },
+        {
+          "title": "Instance Status Checks & Auto Recovery",
+          "type": "video",
+          "duration": "7:42"
+        },
+        {
+          "title": "DEMO - Shutdown, Terminate & Termination Protection",
+          "type": "video",
+          "duration": "5:40"
+        },
+        {
+          "title": "Horizontal & Vertical Scaling",
+          "type": "video",
+          "duration": "11:24"
+        },
+        {
+          "title": "Instance Metadata [THEORY & DEMO]",
+          "type": "video",
+          "duration": "15:46"
+        },
+        {
+          "title": "EC2 Basics Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "CONTAINERS & ECS",
+      "items": [
+        {
+          "title": "Introduction to Containers",
+          "type": "video",
+          "duration": "17:13"
+        },
+        {
+          "title": "DEMO - Creating 'container of cats' Docker Image",
+          "type": "video",
+          "duration": "18:15"
+        },
+        {
+          "title": "ECS - Concepts",
+          "type": "video",
+          "duration": "10:26"
+        },
+        {
+          "title": "ECS - Cluster Mode",
+          "type": "video",
+          "duration": "13:09"
+        },
+        {
+          "title": "DEMO - Deploying 'container of cats' using Fargate [UI UPDATES IN PROGRESS]",
+          "type": "video",
+          "duration": "13:13"
+        },
+        {
+          "title": "Elastic Container Registry (ECR)",
+          "type": "video",
+          "duration": "4:14"
+        },
+        {
+          "title": "Kubernetes 101",
+          "type": "video",
+          "duration": "11:27"
+        },
+        {
+          "title": "Elastic Kubernetes Service (EKS) 101",
+          "type": "video",
+          "duration": "6:14"
+        },
+        {
+          "title": "Containers Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "ADVANCED EC2",
+      "items": [
+        {
+          "title": "Bootstrapping EC2 using User Data",
+          "type": "video",
+          "duration": "10:25"
+        },
+        {
+          "title": "DEMO - Bootstrapping Wordpress Installation - PART1",
+          "type": "video",
+          "duration": "15:00"
+        },
+        {
+          "title": "DEMO - Bootstrapping Wordpress Installation - PART2",
+          "type": "video",
+          "duration": "6:45"
+        },
+        {
+          "title": "Enhanced Bootstrapping with CFN-INIT",
+          "type": "video",
+          "duration": "11:52"
+        },
+        {
+          "title": "DEMO - CFN-INIT and CFN Creation Policies",
+          "type": "video",
+          "duration": "12:29"
+        },
+        {
+          "title": "EC2 Instance Roles & Profile",
+          "type": "video",
+          "duration": "4:18"
+        },
+        {
+          "title": "DEMO - Using EC2 Instance Roles",
+          "type": "video",
+          "duration": "13:31"
+        },
+        {
+          "title": "SSM Parameter Store",
+          "type": "video",
+          "duration": "6:16"
+        },
+        {
+          "title": "DEMO - Parameter Store",
+          "type": "video",
+          "duration": "16:11"
+        },
+        {
+          "title": "System and Application Logging on EC2",
+          "type": "video",
+          "duration": "6:15"
+        },
+        {
+          "title": "DEMO - Logging and Metrics with CloudWatch Agent-PART1",
+          "type": "video",
+          "duration": "11:51"
+        },
+        {
+          "title": "DEMO - Logging and Metrics with CloudWatch Agent-PART2",
+          "type": "video",
+          "duration": "8:08"
+        },
+        {
+          "title": "EC2 Placement Groups",
+          "type": "video",
+          "duration": "14:29"
+        },
+        {
+          "title": "Dedicated Hosts",
+          "type": "video",
+          "duration": "8:56"
+        },
+        {
+          "title": "Enhanced Networking & EBS Optimized",
+          "type": "video",
+          "duration": "6:57"
+        },
+        {
+          "title": "Advanced EC2 Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "Route 53 - Global DNS",
+      "items": [
+        {
+          "title": "R53 Public Hosted Zones",
+          "type": "video",
+          "duration": "6:28"
+        },
+        {
+          "title": "R53 Private Hosted Zones",
+          "type": "video",
+          "duration": "5:10"
+        },
+        {
+          "title": "CNAME vs R53 Alias",
+          "type": "video",
+          "duration": "5:19"
+        },
+        {
+          "title": "Simple Routing",
+          "type": "video",
+          "duration": "2:17"
+        },
+        {
+          "title": "R53 Health Checks",
+          "type": "video",
+          "duration": "12:41"
+        },
+        {
+          "title": "Failover Routing",
+          "type": "video",
+          "duration": "1:53"
+        },
+        {
+          "title": "DEMO - Using R53 and Failover Routing-PART1",
+          "type": "video",
+          "duration": "16:41"
+        },
+        {
+          "title": "DEMO - Using R53 and Failover Routing-PART2",
+          "type": "video",
+          "duration": "6:28"
+        },
+        {
+          "title": "Multi Value Routing",
+          "type": "video",
+          "duration": "2:32"
+        },
+        {
+          "title": "Weighted Routing",
+          "type": "video",
+          "duration": "3:24"
+        },
+        {
+          "title": "Latency Routing",
+          "type": "video",
+          "duration": "2:44"
+        },
+        {
+          "title": "Geolocation Routing",
+          "type": "video",
+          "duration": "5:02"
+        },
+        {
+          "title": "Geoproximity",
+          "type": "video",
+          "duration": "4:50"
+        },
+        {
+          "title": "R53 Interoperability",
+          "type": "video",
+          "duration": "11:50"
+        },
+        {
+          "title": "Implementing DNSSEC using Route53",
+          "type": "video",
+          "duration": "17:43"
+        },
+        {
+          "title": "Route53 Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "Relational Database Service (RDS)",
+      "items": [
+        {
+          "title": "Database Refresher & MODELS - PART1",
+          "type": "video",
+          "duration": "8:51"
+        },
+        {
+          "title": "Database Refresher & MODELS - PART2",
+          "type": "video",
+          "duration": "14:45"
+        },
+        {
+          "title": "ACID vs BASE",
+          "type": "video",
+          "duration": "11:02"
+        },
+        {
+          "title": "Databases on EC2",
+          "type": "video",
+          "duration": "13:08"
+        },
+        {
+          "title": "DEMO - Splitting Wordpress Monolith => APP & DB",
+          "type": "video",
+          "duration": "18:01"
+        },
+        {
+          "title": "Relational Database Service (RDS) Architecture",
+          "type": "video",
+          "duration": "11:39"
+        },
+        {
+          "title": "DEMO - Migrating EC2 DB into RDS - PART1",
+          "type": "video",
+          "duration": "18:20"
+        },
+        {
+          "title": "DEMO - Migrating EC2 DB into RDS - PART2",
+          "type": "video",
+          "duration": "12:58"
+        },
+        {
+          "title": "Relational Database Service (RDS) MultiAZ - Instance and Cluster",
+          "type": "video",
+          "duration": "11:54"
+        },
+        {
+          "title": "RDS Automatic Backup, RDS Snapshots and Restore",
+          "type": "video",
+          "duration": "8:52"
+        },
+        {
+          "title": "RDS Read-Replicas",
+          "type": "video",
+          "duration": "6:36"
+        },
+        {
+          "title": "DEMO - MultiAZ & Snapshot Restore with RDS - PART1",
+          "type": "video",
+          "duration": "14:05"
+        },
+        {
+          "title": "DEMO - MultiAZ & Snapshot Restore with RDS - PART2",
+          "type": "video",
+          "duration": "12:07"
+        },
+        {
+          "title": "RDS Data Security",
+          "type": "video",
+          "duration": "7:03"
+        },
+        {
+          "title": "RDS Custom",
+          "type": "video",
+          "duration": "5:22"
+        },
+        {
+          "title": "Aurora Architecture",
+          "type": "video",
+          "duration": "13:44"
+        },
+        {
+          "title": "Aurora Serverless",
+          "type": "video",
+          "duration": "9:52"
+        },
+        {
+          "title": "DEMO - Migrating to Aurora Serverless [DONT DO THIS DEMO, IT WON'T WORK, UPDATING to SERVERLESSv2]",
+          "type": "video",
+          "duration": "14:47"
+        },
+        {
+          "title": "Aurora Global Database",
+          "type": "video",
+          "duration": "5:08"
+        },
+        {
+          "title": "Multi-master writes",
+          "type": "video",
+          "duration": "7:51"
+        },
+        {
+          "title": "Relational Database Service (RDS) - RDS Proxy",
+          "type": "video",
+          "duration": "9:47"
+        },
+        {
+          "title": "Database Migration Service (DMS)",
+          "type": "video",
+          "duration": "11:03"
+        },
+        {
+          "title": "RDS Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "NETWORK STORAGE & DATA LIFECYCLE",
+      "items": [
+        {
+          "title": "EFS Architecture",
+          "type": "video",
+          "duration": "9:05"
+        },
+        {
+          "title": "[ASSOCIATESHARED]DEMO - Implementing EFS - PART1",
+          "type": "video",
+          "duration": "8:51"
+        },
+        {
+          "title": "[ASSOCIATESHARED]DEMO - Implementing EFS - PART2",
+          "type": "video",
+          "duration": "11:32"
+        },
+        {
+          "title": "DEMO - Using EFS with Wordpress",
+          "type": "video",
+          "duration": "16:00"
+        },
+        {
+          "title": "AWS Backup",
+          "type": "video",
+          "duration": "6:36"
+        },
+        {
+          "title": "Network Storage Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "HA & SCALING",
+      "items": [
+        {
+          "title": "Regional and Global AWS Architecture",
+          "type": "video",
+          "duration": "10:42"
+        },
+        {
+          "title": "Evolution of the Elastic Load Balancer",
+          "type": "video",
+          "duration": "4:10"
+        },
+        {
+          "title": "Elastic Load Balancer Architecture - PART1",
+          "type": "video",
+          "duration": "10:18"
+        },
+        {
+          "title": "Elastic Load Balancer Architecture - PART2",
+          "type": "video",
+          "duration": "12:32"
+        },
+        {
+          "title": "Application Load balancing (ALB) vs Network Load Balancing (NLB)",
+          "type": "video",
+          "duration": "16:20"
+        },
+        {
+          "title": "Launch Configuration and Templates",
+          "type": "video",
+          "duration": "4:00"
+        },
+        {
+          "title": "Auto-Scaling Groups",
+          "type": "video",
+          "duration": "16:01"
+        },
+        {
+          "title": "ASG Scaling Policies",
+          "type": "video",
+          "duration": "10:23"
+        },
+        {
+          "title": "ASG Lifecycle Hooks",
+          "type": "video",
+          "duration": "4:41"
+        },
+        {
+          "title": "ASG HealthCheck Comparison - EC2 vs ELB",
+          "type": "video",
+          "duration": "3:38"
+        },
+        {
+          "title": "SSL Offload & Session Stickiness",
+          "type": "video",
+          "duration": "12:11"
+        },
+        {
+          "title": "DEMO - Seeing Session Stickiness in Action",
+          "type": "video",
+          "duration": "12:57"
+        },
+        {
+          "title": "[AdvancedDemo] Architecture Evolution - STAGE1 - PART1",
+          "type": "video",
+          "duration": "14:24"
+        },
+        {
+          "title": "[AdvancedDemo] Architecture Evolution - STAGE1 - PART2",
+          "type": "video",
+          "duration": "10:43"
+        },
+        {
+          "title": "[AdvancedDemo] Architecture Evolution - STAGE2",
+          "type": "video",
+          "duration": "12:58"
+        },
+        {
+          "title": "[AdvancedDemo] Architecture Evolution - STAGE3",
+          "type": "video",
+          "duration": "19:30"
+        },
+        {
+          "title": "[AdvancedDemo] Architecture Evolution - STAGE4",
+          "type": "video",
+          "duration": "18:04"
+        },
+        {
+          "title": "[AdvancedDemo] Architecture Evolution - STAGE 5 - PART1",
+          "type": "video",
+          "duration": "11:31"
+        },
+        {
+          "title": "[AdvancedDemo] Architecture Evolution - STAGE 5 - PART2",
+          "type": "video",
+          "duration": "14:56"
+        },
+        {
+          "title": "[AdvancedDemo] Architecture Evolution - STAGE6",
+          "type": "video",
+          "duration": "5:48"
+        },
+        {
+          "title": "Gateway Load Balancer",
+          "type": "video",
+          "duration": "13:40"
+        },
+        {
+          "title": "HA and Scaling Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "SERVERLESS AND APPLICATION SERVICES",
+      "items": [
+        {
+          "title": "Architecture Deep Dive - PART1",
+          "type": "video",
+          "duration": "8:52"
+        },
+        {
+          "title": "Architecture Deep Dive - PART2",
+          "type": "video",
+          "duration": "13:09"
+        },
+        {
+          "title": "AWS Lambda - PART1",
+          "type": "video",
+          "duration": "11:25"
+        },
+        {
+          "title": "AWS Lambda - PART2",
+          "type": "video",
+          "duration": "13:59"
+        },
+        {
+          "title": "AWS Lambda - PART3",
+          "type": "video",
+          "duration": "17:03"
+        },
+        {
+          "title": "CloudWatchEvents and EventBridge",
+          "type": "video",
+          "duration": "6:54"
+        },
+        {
+          "title": "DEMO - Automated EC2 Control using Lambda and Events - PART1",
+          "type": "video",
+          "duration": "13:44"
+        },
+        {
+          "title": "DEMO - Automated EC2 Control using Lambda and Events - PART2",
+          "type": "video",
+          "duration": "18:49"
+        },
+        {
+          "title": "Serverless Architecture",
+          "type": "video",
+          "duration": "12:56"
+        },
+        {
+          "title": "Simple Notification Service",
+          "type": "video",
+          "duration": "7:49"
+        },
+        {
+          "title": "Step Functions",
+          "type": "video",
+          "duration": "16:09"
+        },
+        {
+          "title": "API Gateway 101",
+          "type": "video",
+          "duration": "16:27"
+        },
+        {
+          "title": "[MINIPROJECT] Build A Serverless App - Pet-Cuddle-o-Tron - PART1",
+          "type": "video",
+          "duration": "5:01"
+        },
+        {
+          "title": "[MINIPROJECT] Build A Serverless App - Pet-Cuddle-o-Tron - PART2",
+          "type": "video",
+          "duration": "8:24"
+        },
+        {
+          "title": "[MINIPROJECT] Build A Serverless App - Pet-Cuddle-o-Tron - PART3",
+          "type": "video",
+          "duration": "12:26"
+        },
+        {
+          "title": "[MINIPROJECT] Build A Serverless App - Pet-Cuddle-o-Tron - PART4",
+          "type": "video",
+          "duration": "12:45"
+        },
+        {
+          "title": "[MINIPROJECT] Build A Serverless App - Pet-Cuddle-o-Tron - PART5",
+          "type": "video",
+          "duration": "13:31"
+        },
+        {
+          "title": "[MINIPROJECT] Build A Serverless App - Pet-Cuddle-o-Tron - PART6",
+          "type": "video",
+          "duration": "2:38"
+        },
+        {
+          "title": "Simple Queue Service",
+          "type": "video",
+          "duration": "15:30"
+        },
+        {
+          "title": "SQS Standard vs FIFO Queues",
+          "type": "video",
+          "duration": "3:29"
+        },
+        {
+          "title": "SQS Delay Queues",
+          "type": "video",
+          "duration": "4:38"
+        },
+        {
+          "title": "SQS Dead-Letter Queues",
+          "type": "video",
+          "duration": "4:17"
+        },
+        {
+          "title": "Kinesis Data Streams",
+          "type": "video",
+          "duration": "7:52"
+        },
+        {
+          "title": "Kinesis Data Firehose",
+          "type": "video",
+          "duration": "9:11"
+        },
+        {
+          "title": "Kinesis Data Analytics",
+          "type": "video",
+          "duration": "8:51"
+        },
+        {
+          "title": "Kinesis Video Streams",
+          "type": "video",
+          "duration": "5:09"
+        },
+        {
+          "title": "Amazon Cognito - User and Identity Pools",
+          "type": "video",
+          "duration": "14:44"
+        },
+        {
+          "title": "AWS Glue 101",
+          "type": "video",
+          "duration": "6:23"
+        },
+        {
+          "title": "Amazon MQ 101",
+          "type": "video",
+          "duration": "8:15"
+        },
+        {
+          "title": "Amazon AppFlow",
+          "type": "video",
+          "duration": "3:30"
+        },
+        {
+          "title": "Serverless and App Services Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "GLOBAL CONTENT DELIVERY AND OPTIMIZATION",
+      "items": [
+        {
+          "title": "Cloudfront Architecture",
+          "type": "video",
+          "duration": "14:56"
+        },
+        {
+          "title": "CloudFront (CF) - Behaviours",
+          "type": "video",
+          "duration": "9:21"
+        },
+        {
+          "title": "CloudFront - TTL and Invalidations",
+          "type": "video",
+          "duration": "13:48"
+        },
+        {
+          "title": "ACM",
+          "type": "video",
+          "duration": "11:21"
+        },
+        {
+          "title": "Cloudfront and SSL/TLS",
+          "type": "video",
+          "duration": "14:59"
+        },
+        {
+          "title": "CloudFront (CF) - Origin Types & Origin Architecture",
+          "type": "video",
+          "duration": "10:20"
+        },
+        {
+          "title": "DEMO - CloudFront (CF) - Adding a CDN to a static Website-PART1",
+          "type": "video",
+          "duration": "16:23"
+        },
+        {
+          "title": "DEMO - CloudFront (CF) - Adding a CDN to a static Website-PART2",
+          "type": "video",
+          "duration": "12:24"
+        },
+        {
+          "title": "DEMO - CloudFront (CF) - Adding an Alternate CNAME and SSL",
+          "type": "video",
+          "duration": "11:12"
+        },
+        {
+          "title": "Securing CF and S3 using OAI",
+          "type": "video",
+          "duration": "8:50"
+        },
+        {
+          "title": "CloudFront - Private Distribution & Behaviours",
+          "type": "video",
+          "duration": "7:49"
+        },
+        {
+          "title": "DEMO - CloudFront (CF) - Using Origin Access Control (OAC) (new version of OAI)",
+          "type": "video",
+          "duration": "11:21"
+        },
+        {
+          "title": "Lambda@Edge",
+          "type": "video",
+          "duration": "8:03"
+        },
+        {
+          "title": "Global Accelerator",
+          "type": "video",
+          "duration": "10:29"
+        },
+        {
+          "title": "CDN and Optimisation Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "ADVANCED VPC Networking",
+      "items": [
+        {
+          "title": "VPC Flow Logs",
+          "type": "video",
+          "duration": "9:56"
+        },
+        {
+          "title": "Egress-Only Internet gateway",
+          "type": "video",
+          "duration": "6:46"
+        },
+        {
+          "title": "VPC Endpoints (Gateway)",
+          "type": "video",
+          "duration": "11:14"
+        },
+        {
+          "title": "VPC Endpoints (Interface)",
+          "type": "video",
+          "duration": "11:26"
+        },
+        {
+          "title": "DEMO - VPC Endpoints - Interface - PART1",
+          "type": "video",
+          "duration": "11:59"
+        },
+        {
+          "title": "DEMO - VPC Endpoints - Gateway - PART2",
+          "type": "video",
+          "duration": "9:59"
+        },
+        {
+          "title": "DEMO - Egress-Only Internet Gateway - PART3",
+          "type": "video",
+          "duration": "7:57"
+        },
+        {
+          "title": "VPC Peering",
+          "type": "video",
+          "duration": "9:04"
+        },
+        {
+          "title": "DEMO - VPC Peering",
+          "type": "video",
+          "duration": "22:38"
+        },
+        {
+          "title": "Advanced VPC Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "HYBRID ENVIRONMENTS AND MIGRATION",
+      "items": [
+        {
+          "title": "Border Gateway Protocol 101",
+          "type": "video",
+          "duration": "17:29"
+        },
+        {
+          "title": "IPSec VPN Fundamentals",
+          "type": "video",
+          "duration": "14:54"
+        },
+        {
+          "title": "AWS Site-to-Site VPN",
+          "type": "video",
+          "duration": "18:05"
+        },
+        {
+          "title": "DEMO - Simple Site2Site VPN - STAGE0 - SETUP",
+          "type": "video",
+          "duration": "4:52"
+        },
+        {
+          "title": "DEMO - Simple Site2Site VPN - STAGE1 - AWS VPN",
+          "type": "video",
+          "duration": "10:01"
+        },
+        {
+          "title": "DEMO - Simple Site2Site VPN - STAGE2 - onprep pfSense Config",
+          "type": "video",
+          "duration": "17:09"
+        },
+        {
+          "title": "DEMO - Simple Site2Site VPN - STAGE3 - Routing & Security",
+          "type": "video",
+          "duration": "10:29"
+        },
+        {
+          "title": "DEMO - Simple Site2Site VPN - STAGE4 - Testing",
+          "type": "video",
+          "duration": "5:42"
+        },
+        {
+          "title": "DEMO - Simple Site2Site VPN - STAGE5 - Cleanup",
+          "type": "video",
+          "duration": "1:50"
+        },
+        {
+          "title": "Direct Connect (DX) Concepts",
+          "type": "video",
+          "duration": "9:37"
+        },
+        {
+          "title": "Direct Connect (DX) Resilience",
+          "type": "video",
+          "duration": "13:50"
+        },
+        {
+          "title": "Direct Connect (DX) - Public VIF + VPN (Encryption)",
+          "type": "video",
+          "duration": "6:43"
+        },
+        {
+          "title": "Transit Gateway",
+          "type": "video",
+          "duration": "10:26"
+        },
+        {
+          "title": "Storage Gateway - Volume",
+          "type": "video",
+          "duration": "14:15"
+        },
+        {
+          "title": "Storage Gateway - Tape (VTL)",
+          "type": "video",
+          "duration": "12:11"
+        },
+        {
+          "title": "Storage Gateway - File",
+          "type": "video",
+          "duration": "12:15"
+        },
+        {
+          "title": "Snowball / Edge / Snowmobile [NEW VERSION COMING SOON]",
+          "type": "video",
+          "duration": "10:47"
+        },
+        {
+          "title": "Directory Service",
+          "type": "video",
+          "duration": "15:50"
+        },
+        {
+          "title": "DataSync",
+          "type": "video",
+          "duration": "9:27"
+        },
+        {
+          "title": "FSx for Windows Servers",
+          "type": "video",
+          "duration": "11:32"
+        },
+        {
+          "title": "FSx For Lustre",
+          "type": "video",
+          "duration": "13:57"
+        },
+        {
+          "title": "AWS Transfer Family",
+          "type": "video",
+          "duration": "10:24"
+        },
+        {
+          "title": "Hybrid and Migration Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "SECURITY, DEPLOYMENT & OPERATIONS",
+      "items": [
+        {
+          "title": "AWS Secrets Manager",
+          "type": "video",
+          "duration": "7:44"
+        },
+        {
+          "title": "Application Layer (L7) Firewall",
+          "type": "video",
+          "duration": "7:44"
+        },
+        {
+          "title": "Web Application Firewall (WAF), WEBACLs, Rule Groups and Rules",
+          "type": "video",
+          "duration": "19:18"
+        },
+        {
+          "title": "AWS Shield",
+          "type": "video",
+          "duration": "9:47"
+        },
+        {
+          "title": "CloudHSM",
+          "type": "video",
+          "duration": "14:36"
+        },
+        {
+          "title": "AWS Config",
+          "type": "video",
+          "duration": "6:14"
+        },
+        {
+          "title": "Amazon Macie",
+          "type": "video",
+          "duration": "12:04"
+        },
+        {
+          "title": "DEMO - Amazon Macie",
+          "type": "video",
+          "duration": "15:35"
+        },
+        {
+          "title": "Amazon Inspector",
+          "type": "video",
+          "duration": "6:28"
+        },
+        {
+          "title": "Amazon Guardduty",
+          "type": "video",
+          "duration": "4:14"
+        },
+        {
+          "title": "Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "Infrastructure as Code (CloudFormation)",
+      "items": [
+        {
+          "title": "CloudFormation Physical & Logical Resources",
+          "type": "video",
+          "duration": "7:30"
+        },
+        {
+          "title": "DEMO - Simple Non Portable Template - PART1",
+          "type": "video",
+          "duration": "10:28"
+        },
+        {
+          "title": "DEMO - Simple Non Portable Template - PART2",
+          "type": "video",
+          "duration": "11:28"
+        },
+        {
+          "title": "CloudFormation Template and Pseudo Parameters",
+          "type": "video",
+          "duration": "6:53"
+        },
+        {
+          "title": "CloudFormation Intrinsic Functions",
+          "type": "video",
+          "duration": "14:28"
+        },
+        {
+          "title": "CloudFormation Mappings",
+          "type": "video",
+          "duration": "4:30"
+        },
+        {
+          "title": "CloudFormation Outputs",
+          "type": "video",
+          "duration": "3:37"
+        },
+        {
+          "title": "DEMO - Template v2 - Portable",
+          "type": "video",
+          "duration": "13:34"
+        },
+        {
+          "title": "CloudFormation Conditions",
+          "type": "video",
+          "duration": "7:24"
+        },
+        {
+          "title": "CloudFormation DependsOn",
+          "type": "video",
+          "duration": "7:14"
+        },
+        {
+          "title": "CloudFormation Wait Conditions & cfn-signal",
+          "type": "video",
+          "duration": "11:52"
+        },
+        {
+          "title": "CloudFormation Nested Stacks",
+          "type": "video",
+          "duration": "13:55"
+        },
+        {
+          "title": "CloudFormation Cross-Stack References",
+          "type": "video",
+          "duration": "10:05"
+        },
+        {
+          "title": "CloudFormation Stack Sets",
+          "type": "video",
+          "duration": "9:12"
+        },
+        {
+          "title": "CloudFormation Deletion Policy",
+          "type": "video",
+          "duration": "5:24"
+        },
+        {
+          "title": "CloudFormation Stack Roles",
+          "type": "video",
+          "duration": "6:47"
+        },
+        {
+          "title": "CloudFormation Init (CFN-INIT)",
+          "type": "video",
+          "duration": "8:48"
+        },
+        {
+          "title": "CloudFormation cfn-hup",
+          "type": "video",
+          "duration": "4:13"
+        },
+        {
+          "title": "DEMO - wait conditions, cfnsignal, cfninit and cfnhup-PART1",
+          "type": "video",
+          "duration": "12:51"
+        },
+        {
+          "title": "DEMO - wait conditions, cfnsignal, cfninit and cfnhup-PART2",
+          "type": "video",
+          "duration": "14:42"
+        },
+        {
+          "title": "CloudFormation ChangeSets [NEW VERSION COMING SOON]",
+          "type": "video",
+          "duration": "11:03"
+        },
+        {
+          "title": "CloudFormation Custom Resources",
+          "type": "video",
+          "duration": "11:03"
+        },
+        {
+          "title": "DEMO - CloudFormation Custom Resources-PART1",
+          "type": "video",
+          "duration": "9:12"
+        },
+        {
+          "title": "DEMO - CloudFormation Custom Resources-PART2",
+          "type": "video",
+          "duration": "13:27"
+        }
+      ]
+    },
+    {
+      "title": "NOSQL Databases & DynamoDB",
+      "items": [
+        {
+          "title": "DynamoDB - Architecture",
+          "type": "video",
+          "duration": "10:49"
+        },
+        {
+          "title": "DynamoDB - Operations, Consistency and Performance-PART1",
+          "type": "video",
+          "duration": "13:06"
+        },
+        {
+          "title": "DynamoDB - Operations, Consistency and Performance-PART2",
+          "type": "video",
+          "duration": "11:24"
+        },
+        {
+          "title": "DynamoDB Local and Global Secondary Indexes",
+          "type": "video",
+          "duration": "12:35"
+        },
+        {
+          "title": "DynamoDB - Streams & Lambda Triggers",
+          "type": "video",
+          "duration": "9:10"
+        },
+        {
+          "title": "DynamoDB - Global Tables",
+          "type": "video",
+          "duration": "5:09"
+        },
+        {
+          "title": "DynamoDB - Accelerator (DAX)",
+          "type": "video",
+          "duration": "10:58"
+        },
+        {
+          "title": "DynamoDB - TTL",
+          "type": "video",
+          "duration": "4:49"
+        },
+        {
+          "title": "Amazon Athena",
+          "type": "video",
+          "duration": "8:19"
+        },
+        {
+          "title": "DEMO - Athena Demo - PART1",
+          "type": "video",
+          "duration": "13:31"
+        },
+        {
+          "title": "DEMO - Athena Demo - PART2",
+          "type": "video",
+          "duration": "11:37"
+        },
+        {
+          "title": "Elasticache",
+          "type": "video",
+          "duration": "12:51"
+        },
+        {
+          "title": "Redshift Architecture",
+          "type": "video",
+          "duration": "11:32"
+        },
+        {
+          "title": "Redshift DR and Resilience",
+          "type": "video",
+          "duration": "3:40"
+        },
+        {
+          "title": "NoSQL Section Quiz",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "Machine Learning 101",
+      "items": [
+        {
+          "title": "Amazon Comprehend",
+          "type": "video",
+          "duration": "7:28"
+        },
+        {
+          "title": "Amazon Kendra",
+          "type": "video",
+          "duration": "5:00"
+        },
+        {
+          "title": "Amazon Lex",
+          "type": "video",
+          "duration": "5:51"
+        },
+        {
+          "title": "Amazon Polly",
+          "type": "video",
+          "duration": "4:04"
+        },
+        {
+          "title": "Amazon Rekognition",
+          "type": "video",
+          "duration": "4:18"
+        },
+        {
+          "title": "Amazon Textract",
+          "type": "video",
+          "duration": "8:42"
+        },
+        {
+          "title": "Amazon Transcribe",
+          "type": "video",
+          "duration": "4:55"
+        },
+        {
+          "title": "Amazon Translate",
+          "type": "video",
+          "duration": "4:32"
+        },
+        {
+          "title": "Amazon Forecast 101",
+          "type": "video",
+          "duration": "4:04"
+        },
+        {
+          "title": "Amazon Fraud Detector",
+          "type": "video",
+          "duration": "3:34"
+        },
+        {
+          "title": "Amazon SageMaker",
+          "type": "video",
+          "duration": "5:39"
+        }
+      ]
+    },
+    {
+      "title": "Other Services & Features",
+      "items": [
+        {
+          "title": "AWS Local Zones",
+          "type": "video",
+          "duration": "8:52"
+        }
+      ]
+    },
+    {
+      "title": "EXAM",
+      "items": [
+        {
+          "title": "General AWS Exam Technique - 3 Phase Approach",
+          "type": "video",
+          "duration": "8:56"
+        },
+        {
+          "title": "General AWS Question Technique - PART1",
+          "type": "video",
+          "duration": "14:12"
+        },
+        {
+          "title": "General AWS Question Technique - PART2",
+          "type": "video",
+          "duration": "9:01"
+        },
+        {
+          "title": "Practice Exam #1",
+          "type": "quiz",
+          "duration": "10:00"
+        },
+        {
+          "title": "Practice Exam #2",
+          "type": "quiz",
+          "duration": "10:00"
+        }
+      ]
+    },
+    {
+      "title": "Finishing Up",
+      "items": [
+        {
+          "title": "Thanks! and a favour",
+          "type": "video",
+          "duration": "3:15"
+        },
+        {
+          "title": "COURSE UPGRADES - SAVE $ WHEN ADDING MORE COURSES",
+          "type": "video",
+          "duration": "1:00"
+        }
+      ]
+    }
+  ]
+}

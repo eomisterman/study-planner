@@ -641,19 +641,22 @@ def generate_markdown(scheduled_days, course_data, daily_limit, start_date):
 
 
 def write_output(markdown_content, output_filename):
-    """Write Markdown content to file."""
-    print(f"💾 Writing output to: {output_filename}")
+    """
+    Writes the generated Markdown content to a file.
+
+    Args:
+        markdown_content (str): The Markdown content to write.
+        output_filename (str): The name of the file to write to.
+    """
+    print(f"   ✍️ Writing schedule to {output_filename}...")
     try:
-        # TODO: Implement file output in Phase 4
-        # For now, just show what would be written
-        print("Preview of output:")
-        print("-" * 40)
-        print(markdown_content)
-        print("-" * 40)
-        print(f"✅ Would write to: {output_filename}")
-    except Exception as e:
-        print(f"❌ Error writing output: {e}")
-        raise
+        with open(output_filename, 'w', encoding='utf-8') as f:
+            f.write(markdown_content)
+        print(f"   ✅ Schedule successfully written to {output_filename}")
+    except IOError as e:
+        print(f"   ❌ Error writing file {output_filename}: {e}")
+        print("   Check file permissions or disk space.")
+        sys.exit(1)
 
 
 def main():
