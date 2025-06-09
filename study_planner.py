@@ -295,6 +295,101 @@ def generate_weekday_sequence(start_date, num_days_needed):
     return weekdays
 
 
+def create_split_item(original_item, part_number, total_parts, duration_minutes):
+    """Create a split item with proper labeling."""
+    split_item = original_item.copy()
+    split_item['title'] = f"{original_item['title']} (Part {part_number}/{total_parts})"
+    split_item['duration_minutes'] = duration_minutes
+    split_item['is_split'] = True
+    split_item['original_title'] = original_item['title']
+    split_item['part_number'] = part_number
+    split_item['total_parts'] = total_parts
+    return split_item
+
+
+def handle_oversized_item(item, daily_limit, remaining_time_today):
+    """
+    Handle items that exceed daily limit using the 25% rule.
+    
+    Returns tuple: (items_for_today, items_for_future_days)
+    """
+    item_duration = item['duration_minutes']
+    
+    # Check if item exceeds daily limit
+    if item_duration <= daily_limit:
+        # Item fits within daily limit, normal handling
+        return ([item], [])
+    
+    # Item exceeds daily limit - needs splitting
+    print(f"   🔧 Oversized item detected: '{item['title']}' ({item_duration}min > {daily_limit}min limit)")
+    
+    # Apply 25% rule for current day
+    quarter_limit = daily_limit * 0.25
+    
+    if remaining_time_today <= quarter_limit:
+        # Remaining time is ≤ 25% of daily limit → give item full day(s)
+        print(f"   📊 25% rule applied: {remaining_time_today}min remaining ≤ {quarter_limit:.1f}min (25% of {daily_limit}min)")
+        print(f"   🎯 Item will get dedicated day(s)")
+        items_for_today = []
+        items_for_future = [item]  # Will be split across future days
+    else:
+        # Remaining time > 25% → continue adding content to current day
+        print(f"   📊 25% rule applied: {remaining_time_today}min remaining > {quarter_limit:.1f}min (25% of {daily_limit}min)")
+        print(f"   ➕ Adding partial content to current day")
+        
+        # Split item: part for today + remainder for future
+        today_duration = remaining_time_today
+        future_duration = item_duration - today_duration
+        
+        # Create split items
+        today_item = create_split_item(item, 1, 2, today_duration)
+        future_item = create_split_item(item, 2, 2, future_duration)
+        
+        items_for_today = [today_item]
+        items_for_future = [future_item]
+    
+    # Handle items that still exceed daily limit for future days
+    final_future_items = []
+    for future_item in items_for_future:
+        if future_item['duration_minutes'] > daily_limit:
+            # Split large item across multiple full days
+            total_duration = future_item['duration_minutes']
+            num_full_days = total_duration // daily_limit
+            remainder = total_duration % daily_limit
+            
+            total_parts = num_full_days + (1 if remainder > 0 else 0)
+            
+            print(f"   ✂️  Splitting '{future_item.get('original_title', future_item['title'])}' across {total_parts} days")
+            
+            # Create parts
+            for part in range(total_parts):
+                if part < num_full_days:
+                    # Full day part
+                    part_duration = daily_limit
+                else:
+                    # Remainder part
+                    part_duration = remainder
+                
+                if 'is_split' in future_item and future_item['is_split']:
+                    # This is already a split item, update numbering
+                    base_title = future_item['original_title']
+                    part_num = part + future_item['part_number']
+                    total_parts_adjusted = future_item['total_parts'] + total_parts - 1
+                else:
+                    # First time splitting
+                    base_title = future_item['title']
+                    part_num = part + 1
+                    total_parts_adjusted = total_parts
+                
+                split_part = create_split_item(future_item, part_num, total_parts_adjusted, part_duration)
+                final_future_items.append(split_part)
+        else:
+            # Item fits in daily limit
+            final_future_items.append(future_item)
+    
+    return (items_for_today, final_future_items)
+
+
 def schedule_course(course_data, daily_limit, start_date):
     """Generate balanced study schedule from course data."""
     print(f"📅 Scheduling course: {course_data['course_title']}")
@@ -302,12 +397,12 @@ def schedule_course(course_data, daily_limit, start_date):
     print(f"   Start date: {start_date}")
     
     try:
-        # Estimate number of days needed (rough calculation)
+        # Estimate number of days needed (rough calculation with buffer for splitting)
         total_minutes = course_data['total_duration_minutes']
         estimated_days = max(1, (total_minutes + daily_limit - 1) // daily_limit)  # Round up
         
-        # Generate weekday sequence (with some buffer)
-        weekdays = generate_weekday_sequence(start_date, estimated_days + 5)
+        # Generate weekday sequence (with extra buffer for oversized content)
+        weekdays = generate_weekday_sequence(start_date, estimated_days + 10)
         
         # Initialize scheduling variables
         scheduled_days = []
@@ -326,36 +421,86 @@ def schedule_course(course_data, daily_limit, start_date):
         
         print(f"   📋 Processing {len(all_items)} items across {len(course_data['sections'])} sections")
         
+        # Keep track of future items from splits
+        future_items_queue = []
+        
         # Schedule each item
-        for item_index, item in enumerate(all_items):
+        item_index = 0
+        while item_index < len(all_items) or future_items_queue:
+            # Get next item (either from main list or future queue)
+            if future_items_queue:
+                item = future_items_queue.pop(0)
+                item_source = "split"
+            else:
+                item = all_items[item_index]
+                item_index += 1
+                item_source = "original"
+            
             item_duration = item['duration_minutes']
+            remaining_time_today = daily_limit - current_day_minutes
             
             # Check if item fits in current day
-            if current_day_minutes + item_duration <= daily_limit:
+            if item_duration <= remaining_time_today:
                 # Item fits - add it to current day
                 current_day_items.append(item)
                 current_day_minutes += item_duration
-                print(f"   ✅ Item {item_index + 1}: '{item['title']}' ({item_duration}min) → Day {current_day_index + 1}")
+                source_info = f"({item_source})" if item_source == "split" else ""
+                print(f"   ✅ Item: '{item['title']}' ({item_duration}min) → Day {current_day_index + 1} {source_info}")
                 
             else:
-                # Item doesn't fit - finalize current day and start new day
-                if current_day_items:  # Only save if we have items
-                    day_info = {
-                        "day_number": len(scheduled_days) + 1,
-                        "date": weekdays[current_day_index],
-                        "date_string": weekdays[current_day_index].strftime('%A, %B %d, %Y'),
-                        "items": current_day_items.copy(),
-                        "total_minutes": current_day_minutes
-                    }
-                    scheduled_days.append(day_info)
-                    print(f"   📅 Day {day_info['day_number']} completed: {current_day_minutes} minutes ({len(current_day_items)} items)")
+                # Item doesn't fit - handle based on whether it's oversized
+                if item_duration > daily_limit:
+                    # Oversized item - use special handling
+                    items_for_today, items_for_future = handle_oversized_item(item, daily_limit, remaining_time_today)
+                    
+                    # Add items for today
+                    for today_item in items_for_today:
+                        current_day_items.append(today_item)
+                        current_day_minutes += today_item['duration_minutes']
+                        print(f"   ✅ Item: '{today_item['title']}' ({today_item['duration_minutes']}min) → Day {current_day_index + 1} (partial)")
+                    
+                    # Queue items for future days
+                    future_items_queue.extend(items_for_future)
+                    
+                    # If current day has items, finalize it
+                    if current_day_items:
+                        day_info = {
+                            "day_number": len(scheduled_days) + 1,
+                            "date": weekdays[current_day_index],
+                            "date_string": weekdays[current_day_index].strftime('%A, %B %d, %Y'),
+                            "items": current_day_items.copy(),
+                            "total_minutes": current_day_minutes
+                        }
+                        scheduled_days.append(day_info)
+                        print(f"   📅 Day {day_info['day_number']} completed: {current_day_minutes} minutes ({len(current_day_items)} items)")
+                        print()
+                        
+                        # Reset for next day
+                        current_day_index += 1
+                        current_day_items = []
+                        current_day_minutes = 0
                 
-                # Move to next day
-                current_day_index += 1
-                current_day_items = [item]
-                current_day_minutes = item_duration
-                print(f"   🔄 Moving to Day {current_day_index + 1}")
-                print(f"   ✅ Item {item_index + 1}: '{item['title']}' ({item_duration}min) → Day {current_day_index + 1}")
+                else:
+                    # Normal item that doesn't fit - finalize current day and start new day
+                    if current_day_items:  # Only save if we have items
+                        day_info = {
+                            "day_number": len(scheduled_days) + 1,
+                            "date": weekdays[current_day_index],
+                            "date_string": weekdays[current_day_index].strftime('%A, %B %d, %Y'),
+                            "items": current_day_items.copy(),
+                            "total_minutes": current_day_minutes
+                        }
+                        scheduled_days.append(day_info)
+                        print(f"   📅 Day {day_info['day_number']} completed: {current_day_minutes} minutes ({len(current_day_items)} items)")
+                        print()
+                    
+                    # Move to next day and add the item
+                    current_day_index += 1
+                    current_day_items = [item]
+                    current_day_minutes = item_duration
+                    print(f"   🔄 Moving to Day {current_day_index + 1}")
+                    source_info = f"({item_source})" if item_source == "split" else ""
+                    print(f"   ✅ Item: '{item['title']}' ({item_duration}min) → Day {current_day_index + 1} {source_info}")
         
         # Don't forget the last day
         if current_day_items:
@@ -373,10 +518,14 @@ def schedule_course(course_data, daily_limit, start_date):
         
         # Summary
         total_scheduled_minutes = sum(day['total_minutes'] for day in scheduled_days)
+        split_items_count = sum(1 for day in scheduled_days for item in day['items'] if item.get('is_split', False))
+        
         print(f"   📊 Schedule Summary:")
         print(f"      Total days: {len(scheduled_days)}")
         print(f"      Total time: {total_scheduled_minutes} minutes ({total_scheduled_minutes/60:.1f} hours)")
         print(f"      Average per day: {total_scheduled_minutes/len(scheduled_days):.1f} minutes")
+        if split_items_count > 0:
+            print(f"      Split items: {split_items_count} (due to oversized content)")
         
         return scheduled_days
         
