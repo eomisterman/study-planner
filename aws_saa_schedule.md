@@ -1,125 +1,18 @@
 # AWS Solutions Architect Associate - Study Schedule
 
 ## Schedule Information
-- **Start Date:** Monday, June 16, 2025
-- **Daily Study Limit:** 80 minutes (1.3 hours)
-- **Total Course Duration:** 4055 minutes (67.6 hours)
-- **Scheduled Days:** 54 weekdays
+- **Start Date:** Tuesday, June 10, 2025
+- **Daily Study Limit:** 75 minutes (1.2 hours)
+- **Total Course Duration:** 3528 minutes (58.8 hours)
+- **Scheduled Days:** 51 weekdays
 
 ## Progress Tracking
 Check off items as you complete them. Each day's progress is tracked separately.
 
 ## Daily Schedule
 
-### Day 1 - Monday, June 16, 2025 (77 minutes)
+### Day 1 - Tuesday, June 10, 2025 (69 minutes)
 
-- [ ] Public Introduction (5:00)
-      *Section: INTRODUCTION & SCENARIO*
-- [ ] AWS Exams (18:00)
-      *Section: INTRODUCTION & SCENARIO*
-- [ ] Scenario - Animals4life (14:00)
-      *Section: INTRODUCTION & SCENARIO*
-- [ ] Connect with other students and your instructor (4:00)
-      *Section: INTRODUCTION & SCENARIO*
-- [ ] AWS Accounts - The basics (12:00)
-      *Section: INTRODUCTION & SCENARIO*
-- [ ] DEMO - ACCOUNTS - STEP1 - Creating GENERAL AWS Account (15:00)
-      *Section: INTRODUCTION & SCENARIO*
-- [ ] Multi-factor Authentication (MFA) (9:00)
-      *Section: INTRODUCTION & SCENARIO*
-
-### Day 2 - Tuesday, June 17, 2025 (68 minutes)
-
-- [ ] DEMO - ACCOUNTS - STEP2 - Securing GENERAL AWS Account (10:00)
-      *Section: INTRODUCTION & SCENARIO*
-- [ ] DEMO - ACCOUNTS - STEP3 - Creating a Budget (7:00)
-      *Section: INTRODUCTION & SCENARIO*
-- [ ] Creating the Production Account (5:00)
-      *Section: INTRODUCTION & SCENARIO*
-- [ ] Identity and Access Management (IAM) Basics (14:00)
-      *Section: INTRODUCTION & SCENARIO*
-- [ ] DEMO - ACCOUNTS - STEP4 - Adding IAMADMIN to GENERAL Account (13:00)
-      *Section: INTRODUCTION & SCENARIO*
-- [ ] DEMO - ACCOUNTS - STEP4 - Adding IAMADMIN to PRODUCTION Account (11:00)
-      *Section: INTRODUCTION & SCENARIO*
-- [ ] IAM Access Keys (8:00)
-      *Section: INTRODUCTION & SCENARIO*
-
-### Day 3 - Wednesday, June 18, 2025 (72 minutes)
-
-- [ ] DEMO - Creating Access keys and setting up AWS CLI v2 tools (18:00)
-      *Section: INTRODUCTION & SCENARIO*
-- [ ] AWS Public vs Private Services (8:00)
-      *Section: AWS Fundamentals*
-- [ ] AWS Global Infrastructure (15:00)
-      *Section: AWS Fundamentals*
-- [ ] AWS Default Virtual Private Cloud (VPC) (16:00)
-      *Section: AWS Fundamentals*
-- [ ] Elastic Compute Cloud (EC2) Basics (15:00)
-      *Section: AWS Fundamentals*
-
-### Day 4 - Thursday, June 19, 2025 (69 minutes)
-
-- [ ] DEMO - My First EC2 Instance - PART1 (11:00)
-      *Section: AWS Fundamentals*
-- [ ] DEMO - My First EC2 Instance - PART2 (10:00)
-      *Section: AWS Fundamentals*
-- [ ] Simple Storage Service (S3) Basics (16:00)
-      *Section: AWS Fundamentals*
-- [ ] DEMO - My First S3 Bucket (19:00)
-      *Section: AWS Fundamentals*
-- [ ] CloudFormation (CFN) Basics (13:00)
-      *Section: AWS Fundamentals*
-
-### Day 5 - Friday, June 20, 2025 (78 minutes)
-
-- [ ] DEMO - Simple Automation With CloudFormation (CFN) (16:00)
-      *Section: AWS Fundamentals*
-- [ ] CloudWatch (CW) Basics (14:00)
-      *Section: AWS Fundamentals*
-- [ ] DEMO - Simple Monitoring with Cloudwatch (16:00)
-      *Section: AWS Fundamentals*
-- [ ] Shared Responsibility Model (7:00)
-      *Section: AWS Fundamentals*
-- [ ] High-Availability vs Fault-Tolerance vs Disaster Recovery (18:00)
-      *Section: AWS Fundamentals*
-- [ ] Route53 (R53) Fundamentals (7:00)
-      *Section: AWS Fundamentals*
-
-### Day 6 - Monday, June 23, 2025 (64 minutes)
-
-- [ ] DEMO - Registering a Domain with route53 (10:00)
-      *Section: AWS Fundamentals*
-- [ ] DNS Record Types (14:00)
-      *Section: AWS Fundamentals*
-- [ ] Fundamentals Section Quiz (10:00)
-      *Section: AWS Fundamentals*
-- [ ] IAM Identity Policies (16:00)
-      *Section: IAM, ACCOUNTS AND AWS ORGANISATIONS*
-- [ ] IAM Users and ARNs (14:00)
-      *Section: IAM, ACCOUNTS AND AWS ORGANISATIONS*
-
-### Day 7 - Tuesday, June 24, 2025 (79 minutes)
-
-- [ ] DEMO - Simple Identity Permissions in AWS (17:00)
-      *Section: IAM, ACCOUNTS AND AWS ORGANISATIONS*
-- [ ] IAM Groups (8:00)
-      *Section: IAM, ACCOUNTS AND AWS ORGANISATIONS*
-- [ ] DEMO - Permissions control using IAM Groups (10:00)
-      *Section: IAM, ACCOUNTS AND AWS ORGANISATIONS*
-- [ ] IAM Roles - The Tech (9:00)
-      *Section: IAM, ACCOUNTS AND AWS ORGANISATIONS*
-- [ ] When to use IAM Roles (16:00)
-      *Section: IAM, ACCOUNTS AND AWS ORGANISATIONS*
-- [ ] Service-linked Roles & PassRole (6:00)
-      *Section: IAM, ACCOUNTS AND AWS ORGANISATIONS*
-- [ ] AWS Organizations (13:00)
-      *Section: IAM, ACCOUNTS AND AWS ORGANISATIONS*
-
-### Day 8 - Wednesday, June 25, 2025 (70 minutes)
-
-- [ ] DEMO - AWS Organizations (20:00)
-      *Section: IAM, ACCOUNTS AND AWS ORGANISATIONS*
 - [ ] Service Control Policies (SCPs) (13:00)
       *Section: IAM, ACCOUNTS AND AWS ORGANISATIONS*
 - [ ] DEMO - Using Service Control Policies (17:00)
@@ -128,11 +21,11 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: IAM, ACCOUNTS AND AWS ORGANISATIONS*
 - [ ] CloudTrail (12:00)
       *Section: IAM, ACCOUNTS AND AWS ORGANISATIONS*
-
-### Day 9 - Thursday, June 26, 2025 (75 minutes)
-
 - [ ] DEMO - Implementing an Organizational Trail (19:00)
       *Section: IAM, ACCOUNTS AND AWS ORGANISATIONS*
+
+### Day 2 - Wednesday, June 11, 2025 (74 minutes)
+
 - [ ] AWS Control Tower 101 (16:00)
       *Section: IAM, ACCOUNTS AND AWS ORGANISATIONS*
 - [ ] IAM & Orgs Section Quiz (10:00)
@@ -141,11 +34,11 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: SIMPLE STORAGE SERVICE (S3)*
 - [ ] S3 Static Hosting (11:00)
       *Section: SIMPLE STORAGE SERVICE (S3)*
-
-### Day 10 - Friday, June 27, 2025 (79 minutes)
-
 - [ ] DEMO - Creating a static website with S3 (18:00)
       *Section: SIMPLE STORAGE SERVICE (S3)*
+
+### Day 3 - Thursday, June 12, 2025 (74 minutes)
+
 - [ ] Object Versioning & MFA Delete (8:00)
       *Section: SIMPLE STORAGE SERVICE (S3)*
 - [ ] DEMO - S3 Versioning (16:00)
@@ -156,11 +49,11 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: SIMPLE STORAGE SERVICE (S3)*
 - [ ] Key Management Service (KMS) (19:00)
       *Section: SIMPLE STORAGE SERVICE (S3)*
-
-### Day 11 - Monday, June 30, 2025 (80 minutes)
-
 - [ ] DEMO - KMS - Encrypting the battleplans with KMS (13:00)
       *Section: SIMPLE STORAGE SERVICE (S3)*
+
+### Day 4 - Friday, June 13, 2025 (67 minutes)
+
 - [ ] S3 Object Encryption CSE/SSE (24:00)
       *Section: SIMPLE STORAGE SERVICE (S3)*
 - [ ] DEMO - Object Encryption and Role Separation (15:00)
@@ -172,7 +65,7 @@ Check off items as you complete them. Each day's progress is tracked separately.
 - [ ] S3 Object Storage Classes - PART2 (12:00)
       *Section: SIMPLE STORAGE SERVICE (S3)*
 
-### Day 12 - Tuesday, July 01, 2025 (80 minutes)
+### Day 5 - Monday, June 16, 2025 (74 minutes)
 
 - [ ] S3 Lifecycle Configuration (9:00)
       *Section: SIMPLE STORAGE SERVICE (S3)*
@@ -184,11 +77,11 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: SIMPLE STORAGE SERVICE (S3)*
 - [ ] DEMO - Creating and using PresignedURLs (19:00)
       *Section: SIMPLE STORAGE SERVICE (S3)*
+
+### Day 6 - Tuesday, June 17, 2025 (74 minutes)
+
 - [ ] S3 Select and Glacier Select (6:00)
       *Section: SIMPLE STORAGE SERVICE (S3)*
-
-### Day 13 - Wednesday, July 02, 2025 (80 minutes)
-
 - [ ] S3 Events (5:00)
       *Section: SIMPLE STORAGE SERVICE (S3)*
 - [ ] S3 Access Logs (4:00)
@@ -203,11 +96,11 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: SIMPLE STORAGE SERVICE (S3)*
 - [ ] VPC Sizing and Structure - PART1 (12:00)
       *Section: VIRTUAL PRIVATE CLOUD (VPC) BASICS*
+
+### Day 7 - Wednesday, June 18, 2025 (74 minutes)
+
 - [ ] VPC Sizing and Structure - PART2 (12:00)
       *Section: VIRTUAL PRIVATE CLOUD (VPC) BASICS*
-
-### Day 14 - Thursday, July 03, 2025 (76 minutes)
-
 - [ ] Custom VPCs - PART1 - THEORY (11:00)
       *Section: VIRTUAL PRIVATE CLOUD (VPC) BASICS*
 - [ ] DEMO - Custom VPCs - PART2 - DEMO [UPDATED20231129] (6:00)
@@ -218,11 +111,11 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: VIRTUAL PRIVATE CLOUD (VPC) BASICS*
 - [ ] VPC Routing, Internet Gateway & Bastion Hosts (18:00)
       *Section: VIRTUAL PRIVATE CLOUD (VPC) BASICS*
+
+### Day 8 - Thursday, June 19, 2025 (66 minutes)
+
 - [ ] DEMO - Configuring A4L public subnets and Jumpbox - PART1 [UPDATED20231119] (14:00)
       *Section: VIRTUAL PRIVATE CLOUD (VPC) BASICS*
-
-### Day 15 - Friday, July 04, 2025 (78 minutes)
-
 - [ ] DEMO - Configuring A4L public subnets and Jumpbox - PART2 [UPDATED20231119] (12:00)
       *Section: VIRTUAL PRIVATE CLOUD (VPC) BASICS*
 - [ ] Stateful vs Stateless Firewalls (15:00)
@@ -231,32 +124,35 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: VIRTUAL PRIVATE CLOUD (VPC) BASICS*
 - [ ] Security Groups (SG) (12:00)
       *Section: VIRTUAL PRIVATE CLOUD (VPC) BASICS*
+
+### Day 9 - Friday, June 20, 2025 (69 minutes)
+
 - [ ] Network Address Translation (NAT) & NAT Gateway - PART1 (14:00)
       *Section: VIRTUAL PRIVATE CLOUD (VPC) BASICS*
 - [ ] Network Address Translation (NAT) & NAT Gateway - PART2 (12:00)
       *Section: VIRTUAL PRIVATE CLOUD (VPC) BASICS*
-
-### Day 16 - Monday, July 07, 2025 (77 minutes)
-
 - [ ] DEMO - Implementing private internet access using NAT Gateways (20:00)
       *Section: VIRTUAL PRIVATE CLOUD (VPC) BASICS*
 - [ ] VPC Basics Section Quiz (10:00)
       *Section: VIRTUAL PRIVATE CLOUD (VPC) BASICS*
 - [ ] Virtualization 101 (13:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
+
+### Day 10 - Monday, June 23, 2025 (67 minutes)
+
 - [ ] EC2 Architecture and Resilience (13:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
 - [ ] EC2 Instance Types - PART1 (12:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
 - [ ] EC2 Instance Types - PART2 (9:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
-
-### Day 17 - Tuesday, July 08, 2025 (73 minutes)
-
 - [ ] DEMO - EC2 SSH vs EC2 Instance Connect (18:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
 - [ ] Storage Refresher (15:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
+
+### Day 11 - Tuesday, June 24, 2025 (60 minutes)
+
 - [ ] Elastic Block Store (EBS) Service Architecture (9:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
 - [ ] EBS Volume Types - General Purpose (10:00)
@@ -267,13 +163,13 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
 - [ ] Instance Store Volumes - Architecture (9:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
-
-### Day 18 - Wednesday, July 09, 2025 (75 minutes)
-
 - [ ] Choosing between the EC2 Instance Store and EBS (9:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
 - [ ] Snapshots, Restore & Fast Snapshot Restore (FSR) (11:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
+
+### Day 12 - Wednesday, June 25, 2025 (71 minutes)
+
 - [ ] DEMO - EBS Volumes - PART1 (16:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
 - [ ] DEMO - EBS Volumes - PART2 (15:00)
@@ -282,11 +178,11 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
 - [ ] EBS Encryption (9:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
-
-### Day 19 - Thursday, July 10, 2025 (77 minutes)
-
 - [ ] Network Interfaces, Instance IPs and DNS (16:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
+
+### Day 13 - Thursday, June 26, 2025 (70 minutes)
+
 - [ ] DEMO - Manual Install of Wordpress on EC2 - PART1 (13:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
 - [ ] DEMO - Manual Install of Wordpress on EC2 - PART2 (13:00)
@@ -297,11 +193,11 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
 - [ ] DEMO - Creating an Animals4life AMI - PART2 (11:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
-
-### Day 20 - Friday, July 11, 2025 (69 minutes)
-
 - [ ] DEMO - Copying & Sharing an AMI (9:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
+
+### Day 14 - Friday, June 27, 2025 (60 minutes)
+
 - [ ] EC2 Purchase Options - PART1 (10:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
 - [ ] EC2 Purchase Options - PART2 (12:00)
@@ -315,7 +211,7 @@ Check off items as you complete them. Each day's progress is tracked separately.
 - [ ] Horizontal & Vertical Scaling (12:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
 
-### Day 21 - Monday, July 14, 2025 (74 minutes)
+### Day 15 - Monday, June 30, 2025 (74 minutes)
 
 - [ ] Instance Metadata [THEORY & DEMO] (16:00)
       *Section: ELASTIC COMPUTE CLOUD (EC2) BASICS*
@@ -328,7 +224,7 @@ Check off items as you complete them. Each day's progress is tracked separately.
 - [ ] ECS - Concepts (11:00)
       *Section: CONTAINERS & ECS*
 
-### Day 22 - Tuesday, July 15, 2025 (73 minutes)
+### Day 16 - Tuesday, July 01, 2025 (73 minutes)
 
 - [ ] ECS - Cluster Mode (14:00)
       *Section: CONTAINERS & ECS*
@@ -345,7 +241,7 @@ Check off items as you complete them. Each day's progress is tracked separately.
 - [ ] Bootstrapping EC2 using User Data (11:00)
       *Section: ADVANCED EC2*
 
-### Day 23 - Wednesday, July 16, 2025 (73 minutes)
+### Day 17 - Wednesday, July 02, 2025 (73 minutes)
 
 - [ ] DEMO - Bootstrapping Wordpress Installation - PART1 (15:00)
       *Section: ADVANCED EC2*
@@ -362,7 +258,7 @@ Check off items as you complete them. Each day's progress is tracked separately.
 - [ ] SSM Parameter Store (7:00)
       *Section: ADVANCED EC2*
 
-### Day 24 - Thursday, July 17, 2025 (76 minutes)
+### Day 18 - Thursday, July 03, 2025 (69 minutes)
 
 - [ ] DEMO - Parameter Store (17:00)
       *Section: ADVANCED EC2*
@@ -376,11 +272,11 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: ADVANCED EC2*
 - [ ] Dedicated Hosts (9:00)
       *Section: ADVANCED EC2*
+
+### Day 19 - Friday, July 04, 2025 (71 minutes)
+
 - [ ] Enhanced Networking & EBS Optimized (7:00)
       *Section: ADVANCED EC2*
-
-### Day 25 - Friday, July 18, 2025 (78 minutes)
-
 - [ ] Advanced EC2 Section Quiz (10:00)
       *Section: ADVANCED EC2*
 - [ ] R53 Public Hosted Zones (7:00)
@@ -397,15 +293,15 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: Route 53 - Global DNS*
 - [ ] DEMO - Using R53 and Failover Routing-PART1 (17:00)
       *Section: Route 53 - Global DNS*
+
+### Day 20 - Monday, July 07, 2025 (68 minutes)
+
 - [ ] DEMO - Using R53 and Failover Routing-PART2 (7:00)
       *Section: Route 53 - Global DNS*
 - [ ] Multi Value Routing (3:00)
       *Section: Route 53 - Global DNS*
 - [ ] Weighted Routing (4:00)
       *Section: Route 53 - Global DNS*
-
-### Day 26 - Monday, July 21, 2025 (78 minutes)
-
 - [ ] Latency Routing (3:00)
       *Section: Route 53 - Global DNS*
 - [ ] Geolocation Routing (6:00)
@@ -418,26 +314,26 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: Route 53 - Global DNS*
 - [ ] Route53 Section Quiz (10:00)
       *Section: Route 53 - Global DNS*
+
+### Day 21 - Tuesday, July 08, 2025 (69 minutes)
+
 - [ ] Database Refresher & MODELS - PART1 (9:00)
       *Section: Relational Database Service (RDS)*
 - [ ] Database Refresher & MODELS - PART2 (15:00)
       *Section: Relational Database Service (RDS)*
-
-### Day 27 - Tuesday, July 22, 2025 (76 minutes)
-
 - [ ] ACID vs BASE (12:00)
       *Section: Relational Database Service (RDS)*
 - [ ] Databases on EC2 (14:00)
       *Section: Relational Database Service (RDS)*
 - [ ] DEMO - Splitting Wordpress Monolith => APP & DB (19:00)
       *Section: Relational Database Service (RDS)*
+
+### Day 22 - Wednesday, July 09, 2025 (72 minutes)
+
 - [ ] Relational Database Service (RDS) Architecture (12:00)
       *Section: Relational Database Service (RDS)*
 - [ ] DEMO - Migrating EC2 DB into RDS - PART1 (19:00)
       *Section: Relational Database Service (RDS)*
-
-### Day 28 - Wednesday, July 23, 2025 (77 minutes)
-
 - [ ] DEMO - Migrating EC2 DB into RDS - PART2 (13:00)
       *Section: Relational Database Service (RDS)*
 - [ ] Relational Database Service (RDS) MultiAZ - Instance and Cluster (12:00)
@@ -446,21 +342,24 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: Relational Database Service (RDS)*
 - [ ] RDS Read-Replicas (7:00)
       *Section: Relational Database Service (RDS)*
+
+### Day 23 - Thursday, July 10, 2025 (66 minutes)
+
 - [ ] DEMO - MultiAZ & Snapshot Restore with RDS - PART1 (15:00)
       *Section: Relational Database Service (RDS)*
 - [ ] DEMO - MultiAZ & Snapshot Restore with RDS - PART2 (13:00)
       *Section: Relational Database Service (RDS)*
 - [ ] RDS Data Security (8:00)
       *Section: Relational Database Service (RDS)*
-
-### Day 29 - Thursday, July 24, 2025 (69 minutes)
-
 - [ ] RDS Custom (6:00)
       *Section: Relational Database Service (RDS)*
 - [ ] Aurora Architecture (14:00)
       *Section: Relational Database Service (RDS)*
 - [ ] Aurora Serverless (10:00)
       *Section: Relational Database Service (RDS)*
+
+### Day 24 - Friday, July 11, 2025 (71 minutes)
+
 - [ ] DEMO - Migrating to Aurora Serverless [DONT DO THIS DEMO, IT WON'T WORK, UPDATING to SERVERLESSv2] (15:00)
       *Section: Relational Database Service (RDS)*
 - [ ] Aurora Global Database (6:00)
@@ -469,15 +368,15 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: Relational Database Service (RDS)*
 - [ ] Relational Database Service (RDS) - RDS Proxy (10:00)
       *Section: Relational Database Service (RDS)*
-
-### Day 30 - Friday, July 25, 2025 (76 minutes)
-
 - [ ] Database Migration Service (DMS) (12:00)
       *Section: Relational Database Service (RDS)*
 - [ ] RDS Section Quiz (10:00)
       *Section: Relational Database Service (RDS)*
 - [ ] EFS Architecture (10:00)
       *Section: NETWORK STORAGE & DATA LIFECYCLE*
+
+### Day 25 - Monday, July 14, 2025 (70 minutes)
+
 - [ ] [ASSOCIATESHARED]DEMO - Implementing EFS - PART1 (9:00)
       *Section: NETWORK STORAGE & DATA LIFECYCLE*
 - [ ] [ASSOCIATESHARED]DEMO - Implementing EFS - PART2 (12:00)
@@ -486,15 +385,15 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: NETWORK STORAGE & DATA LIFECYCLE*
 - [ ] AWS Backup (7:00)
       *Section: NETWORK STORAGE & DATA LIFECYCLE*
-
-### Day 31 - Monday, July 28, 2025 (71 minutes)
-
 - [ ] Network Storage Section Quiz (10:00)
       *Section: NETWORK STORAGE & DATA LIFECYCLE*
 - [ ] Regional and Global AWS Architecture (11:00)
       *Section: HA & SCALING*
 - [ ] Evolution of the Elastic Load Balancer (5:00)
       *Section: HA & SCALING*
+
+### Day 26 - Tuesday, July 15, 2025 (73 minutes)
+
 - [ ] Elastic Load Balancer Architecture - PART1 (11:00)
       *Section: HA & SCALING*
 - [ ] Elastic Load Balancer Architecture - PART2 (13:00)
@@ -503,13 +402,13 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: HA & SCALING*
 - [ ] Launch Configuration and Templates (4:00)
       *Section: HA & SCALING*
-
-### Day 32 - Tuesday, July 29, 2025 (78 minutes)
-
 - [ ] Auto-Scaling Groups (17:00)
       *Section: HA & SCALING*
 - [ ] ASG Scaling Policies (11:00)
       *Section: HA & SCALING*
+
+### Day 27 - Wednesday, July 16, 2025 (74 minutes)
+
 - [ ] ASG Lifecycle Hooks (5:00)
       *Section: HA & SCALING*
 - [ ] ASG HealthCheck Comparison - EC2 vs ELB (4:00)
@@ -520,26 +419,26 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: HA & SCALING*
 - [ ] [AdvancedDemo] Architecture Evolution - STAGE1 - PART1 (15:00)
       *Section: HA & SCALING*
-
-### Day 33 - Wednesday, July 30, 2025 (75 minutes)
-
 - [ ] [AdvancedDemo] Architecture Evolution - STAGE1 - PART2 (11:00)
       *Section: HA & SCALING*
 - [ ] [AdvancedDemo] Architecture Evolution - STAGE2 (13:00)
       *Section: HA & SCALING*
+
+### Day 28 - Thursday, July 17, 2025 (72 minutes)
+
 - [ ] [AdvancedDemo] Architecture Evolution - STAGE3 (20:00)
       *Section: HA & SCALING*
 - [ ] [AdvancedDemo] Architecture Evolution - STAGE4 (19:00)
       *Section: HA & SCALING*
 - [ ] [AdvancedDemo] Architecture Evolution - STAGE 5 - PART1 (12:00)
       *Section: HA & SCALING*
-
-### Day 34 - Thursday, July 31, 2025 (80 minutes)
-
 - [ ] [AdvancedDemo] Architecture Evolution - STAGE 5 - PART2 (15:00)
       *Section: HA & SCALING*
 - [ ] [AdvancedDemo] Architecture Evolution - STAGE6 (6:00)
       *Section: HA & SCALING*
+
+### Day 29 - Friday, July 18, 2025 (73 minutes)
+
 - [ ] Gateway Load Balancer (14:00)
       *Section: HA & SCALING*
 - [ ] HA and Scaling Section Quiz (10:00)
@@ -550,11 +449,11 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: SERVERLESS AND APPLICATION SERVICES*
 - [ ] AWS Lambda - PART1 (12:00)
       *Section: SERVERLESS AND APPLICATION SERVICES*
-
-### Day 35 - Friday, August 01, 2025 (72 minutes)
-
 - [ ] AWS Lambda - PART2 (14:00)
       *Section: SERVERLESS AND APPLICATION SERVICES*
+
+### Day 30 - Monday, July 21, 2025 (71 minutes)
+
 - [ ] AWS Lambda - PART3 (18:00)
       *Section: SERVERLESS AND APPLICATION SERVICES*
 - [ ] CloudWatchEvents and EventBridge (7:00)
@@ -563,11 +462,11 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: SERVERLESS AND APPLICATION SERVICES*
 - [ ] DEMO - Automated EC2 Control using Lambda and Events - PART2 (19:00)
       *Section: SERVERLESS AND APPLICATION SERVICES*
-
-### Day 36 - Monday, August 04, 2025 (70 minutes)
-
 - [ ] Serverless Architecture (13:00)
       *Section: SERVERLESS AND APPLICATION SERVICES*
+
+### Day 31 - Tuesday, July 22, 2025 (70 minutes)
+
 - [ ] Simple Notification Service (8:00)
       *Section: SERVERLESS AND APPLICATION SERVICES*
 - [ ] Step Functions (17:00)
@@ -578,11 +477,11 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: SERVERLESS AND APPLICATION SERVICES*
 - [ ] [MINIPROJECT] Build A Serverless App - Pet-Cuddle-o-Tron - PART2 (9:00)
       *Section: SERVERLESS AND APPLICATION SERVICES*
-
-### Day 37 - Tuesday, August 05, 2025 (73 minutes)
-
 - [ ] [MINIPROJECT] Build A Serverless App - Pet-Cuddle-o-Tron - PART3 (13:00)
       *Section: SERVERLESS AND APPLICATION SERVICES*
+
+### Day 32 - Wednesday, July 23, 2025 (68 minutes)
+
 - [ ] [MINIPROJECT] Build A Serverless App - Pet-Cuddle-o-Tron - PART4 (13:00)
       *Section: SERVERLESS AND APPLICATION SERVICES*
 - [ ] [MINIPROJECT] Build A Serverless App - Pet-Cuddle-o-Tron - PART5 (14:00)
@@ -597,11 +496,11 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: SERVERLESS AND APPLICATION SERVICES*
 - [ ] SQS Dead-Letter Queues (5:00)
       *Section: SERVERLESS AND APPLICATION SERVICES*
-
-### Day 38 - Wednesday, August 06, 2025 (78 minutes)
-
 - [ ] Kinesis Data Streams (8:00)
       *Section: SERVERLESS AND APPLICATION SERVICES*
+
+### Day 33 - Thursday, July 24, 2025 (70 minutes)
+
 - [ ] Kinesis Data Firehose (10:00)
       *Section: SERVERLESS AND APPLICATION SERVICES*
 - [ ] Kinesis Data Analytics (9:00)
@@ -619,7 +518,7 @@ Check off items as you complete them. Each day's progress is tracked separately.
 - [ ] Serverless and App Services Section Quiz (10:00)
       *Section: SERVERLESS AND APPLICATION SERVICES*
 
-### Day 39 - Thursday, August 07, 2025 (77 minutes)
+### Day 34 - Friday, July 25, 2025 (66 minutes)
 
 - [ ] Cloudfront Architecture (15:00)
       *Section: GLOBAL CONTENT DELIVERY AND OPTIMIZATION*
@@ -631,11 +530,11 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: GLOBAL CONTENT DELIVERY AND OPTIMIZATION*
 - [ ] Cloudfront and SSL/TLS (15:00)
       *Section: GLOBAL CONTENT DELIVERY AND OPTIMIZATION*
+
+### Day 35 - Monday, July 28, 2025 (70 minutes)
+
 - [ ] CloudFront (CF) - Origin Types & Origin Architecture (11:00)
       *Section: GLOBAL CONTENT DELIVERY AND OPTIMIZATION*
-
-### Day 40 - Friday, August 08, 2025 (80 minutes)
-
 - [ ] DEMO - CloudFront (CF) - Adding a CDN to a static Website-PART1 (17:00)
       *Section: GLOBAL CONTENT DELIVERY AND OPTIMIZATION*
 - [ ] DEMO - CloudFront (CF) - Adding a CDN to a static Website-PART2 (13:00)
@@ -646,13 +545,13 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: GLOBAL CONTENT DELIVERY AND OPTIMIZATION*
 - [ ] CloudFront - Private Distribution & Behaviours (8:00)
       *Section: GLOBAL CONTENT DELIVERY AND OPTIMIZATION*
+
+### Day 36 - Tuesday, July 29, 2025 (71 minutes)
+
 - [ ] DEMO - CloudFront (CF) - Using Origin Access Control (OAC) (new version of OAI) (12:00)
       *Section: GLOBAL CONTENT DELIVERY AND OPTIMIZATION*
 - [ ] Lambda@Edge (9:00)
       *Section: GLOBAL CONTENT DELIVERY AND OPTIMIZATION*
-
-### Day 41 - Monday, August 11, 2025 (74 minutes)
-
 - [ ] Global Accelerator (11:00)
       *Section: GLOBAL CONTENT DELIVERY AND OPTIMIZATION*
 - [ ] CDN and Optimisation Section Quiz (10:00)
@@ -663,13 +562,13 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: ADVANCED VPC Networking*
 - [ ] VPC Endpoints (Gateway) (12:00)
       *Section: ADVANCED VPC Networking*
+
+### Day 37 - Wednesday, July 30, 2025 (75 minutes)
+
 - [ ] VPC Endpoints (Interface) (12:00)
       *Section: ADVANCED VPC Networking*
 - [ ] DEMO - VPC Endpoints - Interface - PART1 (12:00)
       *Section: ADVANCED VPC Networking*
-
-### Day 42 - Tuesday, August 12, 2025 (79 minutes)
-
 - [ ] DEMO - VPC Endpoints - Gateway - PART2 (10:00)
       *Section: ADVANCED VPC Networking*
 - [ ] DEMO - Egress-Only Internet Gateway - PART3 (8:00)
@@ -678,28 +577,28 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: ADVANCED VPC Networking*
 - [ ] DEMO - VPC Peering (23:00)
       *Section: ADVANCED VPC Networking*
+
+### Day 38 - Thursday, July 31, 2025 (67 minutes)
+
 - [ ] Advanced VPC Section Quiz (10:00)
       *Section: ADVANCED VPC Networking*
 - [ ] Border Gateway Protocol 101 (18:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
-
-### Day 43 - Wednesday, August 13, 2025 (79 minutes)
-
 - [ ] IPSec VPN Fundamentals (15:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
 - [ ] AWS Site-to-Site VPN (19:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
 - [ ] DEMO - Simple Site2Site VPN - STAGE0 - SETUP (5:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
+
+### Day 39 - Friday, August 01, 2025 (72 minutes)
+
 - [ ] DEMO - Simple Site2Site VPN - STAGE1 - AWS VPN (11:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
 - [ ] DEMO - Simple Site2Site VPN - STAGE2 - onprep pfSense Config (18:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
 - [ ] DEMO - Simple Site2Site VPN - STAGE3 - Routing & Security (11:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
-
-### Day 44 - Thursday, August 14, 2025 (78 minutes)
-
 - [ ] DEMO - Simple Site2Site VPN - STAGE4 - Testing (6:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
 - [ ] DEMO - Simple Site2Site VPN - STAGE5 - Cleanup (2:00)
@@ -708,6 +607,9 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
 - [ ] Direct Connect (DX) Resilience (14:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
+
+### Day 40 - Monday, August 04, 2025 (70 minutes)
+
 - [ ] Direct Connect (DX) - Public VIF + VPN (Encryption) (7:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
 - [ ] Transit Gateway (11:00)
@@ -716,13 +618,13 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
 - [ ] Storage Gateway - Tape (VTL) (13:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
-
-### Day 45 - Friday, August 15, 2025 (76 minutes)
-
 - [ ] Storage Gateway - File (13:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
 - [ ] Snowball / Edge / Snowmobile [NEW VERSION COMING SOON] (11:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
+
+### Day 41 - Tuesday, August 05, 2025 (73 minutes)
+
 - [ ] Directory Service (16:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
 - [ ] DataSync (10:00)
@@ -731,13 +633,13 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
 - [ ] FSx For Lustre (14:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
-
-### Day 46 - Monday, August 18, 2025 (67 minutes)
-
 - [ ] AWS Transfer Family (11:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
 - [ ] Hybrid and Migration Section Quiz (10:00)
       *Section: HYBRID ENVIRONMENTS AND MIGRATION*
+
+### Day 42 - Wednesday, August 06, 2025 (68 minutes)
+
 - [ ] AWS Secrets Manager (8:00)
       *Section: SECURITY, DEPLOYMENT & OPERATIONS*
 - [ ] Application Layer (L7) Firewall (8:00)
@@ -746,13 +648,13 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: SECURITY, DEPLOYMENT & OPERATIONS*
 - [ ] AWS Shield (10:00)
       *Section: SECURITY, DEPLOYMENT & OPERATIONS*
-
-### Day 47 - Tuesday, August 19, 2025 (73 minutes)
-
 - [ ] CloudHSM (15:00)
       *Section: SECURITY, DEPLOYMENT & OPERATIONS*
 - [ ] AWS Config (7:00)
       *Section: SECURITY, DEPLOYMENT & OPERATIONS*
+
+### Day 43 - Thursday, August 07, 2025 (70 minutes)
+
 - [ ] Amazon Macie (13:00)
       *Section: SECURITY, DEPLOYMENT & OPERATIONS*
 - [ ] DEMO - Amazon Macie (16:00)
@@ -763,13 +665,13 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: SECURITY, DEPLOYMENT & OPERATIONS*
 - [ ] Section Quiz (10:00)
       *Section: SECURITY, DEPLOYMENT & OPERATIONS*
-
-### Day 48 - Wednesday, August 20, 2025 (76 minutes)
-
 - [ ] CloudFormation Physical & Logical Resources (8:00)
       *Section: Infrastructure as Code (CloudFormation)*
 - [ ] DEMO - Simple Non Portable Template - PART1 (11:00)
       *Section: Infrastructure as Code (CloudFormation)*
+
+### Day 44 - Friday, August 08, 2025 (73 minutes)
+
 - [ ] DEMO - Simple Non Portable Template - PART2 (12:00)
       *Section: Infrastructure as Code (CloudFormation)*
 - [ ] CloudFormation Template and Pseudo Parameters (7:00)
@@ -782,13 +684,13 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: Infrastructure as Code (CloudFormation)*
 - [ ] DEMO - Template v2 - Portable (14:00)
       *Section: Infrastructure as Code (CloudFormation)*
-
-### Day 49 - Thursday, August 21, 2025 (76 minutes)
-
 - [ ] CloudFormation Conditions (8:00)
       *Section: Infrastructure as Code (CloudFormation)*
 - [ ] CloudFormation DependsOn (8:00)
       *Section: Infrastructure as Code (CloudFormation)*
+
+### Day 45 - Monday, August 11, 2025 (74 minutes)
+
 - [ ] CloudFormation Wait Conditions & cfn-signal (12:00)
       *Section: Infrastructure as Code (CloudFormation)*
 - [ ] CloudFormation Nested Stacks (14:00)
@@ -801,13 +703,13 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: Infrastructure as Code (CloudFormation)*
 - [ ] CloudFormation Stack Roles (7:00)
       *Section: Infrastructure as Code (CloudFormation)*
-
-### Day 50 - Friday, August 22, 2025 (76 minutes)
-
 - [ ] CloudFormation Init (CFN-INIT) (9:00)
       *Section: Infrastructure as Code (CloudFormation)*
 - [ ] CloudFormation cfn-hup (5:00)
       *Section: Infrastructure as Code (CloudFormation)*
+
+### Day 46 - Tuesday, August 12, 2025 (62 minutes)
+
 - [ ] DEMO - wait conditions, cfnsignal, cfninit and cfnhup-PART1 (13:00)
       *Section: Infrastructure as Code (CloudFormation)*
 - [ ] DEMO - wait conditions, cfnsignal, cfninit and cfnhup-PART2 (15:00)
@@ -819,7 +721,7 @@ Check off items as you complete them. Each day's progress is tracked separately.
 - [ ] DEMO - CloudFormation Custom Resources-PART1 (10:00)
       *Section: Infrastructure as Code (CloudFormation)*
 
-### Day 51 - Monday, August 25, 2025 (80 minutes)
+### Day 47 - Wednesday, August 13, 2025 (74 minutes)
 
 - [ ] DEMO - CloudFormation Custom Resources-PART2 (14:00)
       *Section: Infrastructure as Code (CloudFormation)*
@@ -833,11 +735,11 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: NOSQL Databases & DynamoDB*
 - [ ] DynamoDB - Streams & Lambda Triggers (10:00)
       *Section: NOSQL Databases & DynamoDB*
+
+### Day 48 - Thursday, August 14, 2025 (70 minutes)
+
 - [ ] DynamoDB - Global Tables (6:00)
       *Section: NOSQL Databases & DynamoDB*
-
-### Day 52 - Tuesday, August 26, 2025 (80 minutes)
-
 - [ ] DynamoDB - Accelerator (DAX) (11:00)
       *Section: NOSQL Databases & DynamoDB*
 - [ ] DynamoDB - TTL (5:00)
@@ -850,13 +752,13 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: NOSQL Databases & DynamoDB*
 - [ ] Elasticache (13:00)
       *Section: NOSQL Databases & DynamoDB*
+
+### Day 49 - Friday, August 15, 2025 (74 minutes)
+
 - [ ] Redshift Architecture (12:00)
       *Section: NOSQL Databases & DynamoDB*
 - [ ] Redshift DR and Resilience (4:00)
       *Section: NOSQL Databases & DynamoDB*
-
-### Day 53 - Wednesday, August 27, 2025 (73 minutes)
-
 - [ ] NoSQL Section Quiz (10:00)
       *Section: NOSQL Databases & DynamoDB*
 - [ ] Amazon Comprehend (8:00)
@@ -875,15 +777,15 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: Machine Learning 101*
 - [ ] Amazon Translate (5:00)
       *Section: Machine Learning 101*
+
+### Day 50 - Monday, August 18, 2025 (68 minutes)
+
 - [ ] Amazon Forecast 101 (5:00)
       *Section: Machine Learning 101*
 - [ ] Amazon Fraud Detector (4:00)
       *Section: Machine Learning 101*
 - [ ] Amazon SageMaker (6:00)
       *Section: Machine Learning 101*
-
-### Day 54 - Thursday, August 28, 2025 (68 minutes)
-
 - [ ] AWS Local Zones (9:00)
       *Section: Other Services & Features*
 - [ ] General AWS Exam Technique - 3 Phase Approach (9:00)
@@ -894,6 +796,9 @@ Check off items as you complete them. Each day's progress is tracked separately.
       *Section: EXAM*
 - [ ] Practice Exam #1 (10:00)
       *Section: EXAM*
+
+### Day 51 - Tuesday, August 19, 2025 (15 minutes)
+
 - [ ] Practice Exam #2 (10:00)
       *Section: EXAM*
 - [ ] Thanks! and a favour (4:00)
@@ -904,12 +809,12 @@ Check off items as you complete them. Each day's progress is tracked separately.
 ---
 
 ## Schedule Summary
-- **Total Study Days:** 54
-- **Total Study Time:** 4055 minutes (67.6 hours)
-- **Total Items:** 364
-- **Average Time per Day:** 75.1 minutes
-- **Completion Date:** Thursday, August 28, 2025
-- **Calendar Duration:** 74 days (10.6 weeks)
+- **Total Study Days:** 51
+- **Total Study Time:** 3528 minutes (58.8 hours)
+- **Total Items:** 321
+- **Average Time per Day:** 69.2 minutes
+- **Completion Date:** Tuesday, August 19, 2025
+- **Calendar Duration:** 71 days (10.1 weeks)
 
 ## Study Tips
 - [ ] Set up a consistent study environment
